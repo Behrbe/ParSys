@@ -1,5 +1,6 @@
 #include <vector>
 #include <cstdlib>
+#include <stdio.h>
 #include <cmath>
 
 using Matrix = std::vector<std::vector<double>>;
@@ -16,87 +17,35 @@ Matrix id(unsigned n) {
 	}
 	return res;
 }
-/**
-// computes the product of two matrices
-Matrix operator*(const Matrix& a, const Matrix& b) {
-	unsigned n = a.size();
-	Matrix c = id(n);
-	#pragma omp parallel for
-	for(unsigned i=0; i<n; ++i) {
-		#pragma omp parallel for
-		for(unsigned j=0; j<n; ++j) {
-			c[i][j] = 0;
-			for(unsigned k=0; k<n; ++k) {
-				c[i][j] += a[i][k] * b[k][j];
-			}
-		}
-	}
-	return c;
-}
-* */
-/**
-// computes the product of two matrices
-Matrix operator*(const Matrix& a, const Matrix& b) {
-	unsigned n = a.size();
-	Matrix c = id(n);
-	
-	for(unsigned i=0; i<n; ++i) {
-		
-		for(unsigned j=0; j<n; ++j) {
-			c[i][j] = 0;
-			for(unsigned k=0; k<n; ++k) {
-				c[i][j] += a[i][k] * b[k][j];
-			}
-		}
-	}
-	return c;
-}
 
-
-// computes the product of two matrices
-Matrix operator*(const Matrix& a, const Matrix& b) {
-	unsigned n = a.size();
-	Matrix c = id(n);
-	
-	for(unsigned i=0; i<n; ++i) {
-		
-		for(unsigned j=0; j<n; ++j) {
-			c[i][j] = 0;
-			#pragma omp parallel
-			for(unsigned volatile k=0; k<n; ++k) {
-				c[i][j] += a[i][k] * b[k][j];
-			}
-		}
-	}
-	return c;
-}*/
-// Serial Optimation 1
+// Serial Optimation 1: Reduce number of executed loops 
  
 // computes the product of two matrices
 Matrix operator*(const Matrix& a, const Matrix& b) {
 	unsigned n = a.size();
 	Matrix c = id(n);
 	for(unsigned i=0; i<n; ++i) {
-		unsigned k, j =0;
-		for(; j<n-4; j+=4) {
-			c[i][j] = 0;
-			c[i][j+1] = 0;
-			c[i][j+2] = 0;
-			c[i][j+3] = 0;
-			for(; k<n-4; k+=4) {
-				c[i][j] += a[i][k] * b[k][j];
-				c[i][j+1] += a[i][k+1] * b[k+1][j];
-				c[i][j+2] += a[i][k+2] * b[k+2][j];
-				c[i][j+3] += a[i][k+3] * b[k+3][j];
-			}
-		for(; j<n; ++j) {
-			c[i][j] = 0;
+		unsigned k, j;
+		
+		double u, v, w, x;
+		for(j=0; j<n; ++j) {
+			c[i][j]=0;
+			
+			for( k=0 ; k<n-4; k=k+4) {
+				u= a[i][k+3] * b[k+3][j];
+				v= a[i][k+2] * b[k+2][j];
+				w= a[i][k+1] * b[k+1][j];
+				x= a[i][k] * b[k][j];
+				c[i][j]+= u+v+w+x;
+				
+				}
 			for(; k<n; ++k) 
+				
 				c[i][j] += a[i][k] * b[k][j];
 			
 			}
 		}
-	}
+	
 	return c;
 }
 
@@ -113,7 +62,14 @@ int main(int argc, char** argv) {
 
 	// compute the product
 	auto c = a * b;
-
+	/**
+	for(unsigned i=0; i<n; i++){
+		for(unsigned j=0; j<n; j++){
+			printf(" %lf", c[i][j]);
+		}
+		printf("\n");	
+	}
+	*/
 	// check that the result is correct
 	return (c == a) ? 0 : 42;
 }

@@ -1,0 +1,814 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 65.03     36.10    36.10        1    36.10    55.09  main
+ 10.71     42.04     5.94 291535769     0.00     0.00  std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::operator[](unsigned long) const
+  9.91     47.54     5.50 262912366     0.00     0.00  std::vector<double, std::allocator<double> >::operator[](unsigned long) const
+  5.75     50.74     3.19 141588652     0.00     0.00  std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::operator[](unsigned long)
+  5.67     53.88     3.15 154069581     0.00     0.00  std::vector<double, std::allocator<double> >::operator[](unsigned long)
+  1.55     54.74     0.86       24     0.04     0.04  std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::size() const
+  0.71     55.14     0.40        1     0.40     0.47  bool std::operator==<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >(std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&)
+  0.62     55.48     0.35     3000     0.00     0.00  std::vector<double, std::allocator<double> >::resize(unsigned long)
+  0.05     55.51     0.03        3     0.01     0.26  std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::resize(unsigned long)
+  0.04     55.53     0.02     3000     0.00     0.00  __gnu_cxx::__enable_if<std::__is_scalar<double>::__value, double*>::__type std::__fill_n_a<double*, unsigned long, double>(double*, unsigned long, double const&)
+  0.04     55.55     0.02        3     0.01     0.43  id(unsigned int)
+  0.00     55.55     0.00    23000     0.00     0.00  std::vector<double, std::allocator<double> >::size() const
+  0.00     55.55     0.00    12000     0.00     0.00  std::_Iter_base<double*, false>::_S_base(double*)
+  0.00     55.55     0.00    12000     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator()
+  0.00     55.55     0.00    12000     0.00     0.00  std::_Niter_base<double*>::iterator_type std::__niter_base<double*>(double*)
+  0.00     55.55     0.00     9000     0.00     0.00  __gnu_cxx::new_allocator<double>::max_size() const
+  0.00     55.55     0.00     6000     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator() const
+  0.00     55.55     0.00     6000     0.00     0.00  std::move_iterator<double*>::base() const
+  0.00     55.55     0.00     6000     0.00     0.00  std::vector<double, std::allocator<double> >::max_size() const
+  0.00     55.55     0.00     6000     0.00     0.00  std::_Iter_base<std::move_iterator<double*>, true>::_S_base(std::move_iterator<double*>)
+  0.00     55.55     0.00     6000     0.00     0.00  void std::_Destroy_aux<true>::__destroy<double*>(double*, double*)
+  0.00     55.55     0.00     6000     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long)
+  0.00     55.55     0.00     6000     0.00     0.00  std::move_iterator<double*>::move_iterator(double*)
+  0.00     55.55     0.00     6000     0.00     0.00  std::enable_if<std::allocator_traits<std::allocator<double> >::__maxsize_helper<std::allocator<double> const>::value, unsigned long>::type std::allocator_traits<std::allocator<double> >::_S_max_size<std::allocator<double> const>(std::allocator<double> const&)
+  0.00     55.55     0.00     6000     0.00     0.00  std::allocator_traits<std::allocator<double> >::max_size(std::allocator<double> const&)
+  0.00     55.55     0.00     6000     0.00     0.00  std::vector<double, std::allocator<double> >* std::__addressof<std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >&)
+  0.00     55.55     0.00     6000     0.00     0.00  std::_Miter_base<std::move_iterator<double*> >::iterator_type std::__miter_base<std::move_iterator<double*> >(std::move_iterator<double*>)
+  0.00     55.55     0.00     6000     0.00     0.00  std::move_iterator<double*> std::__make_move_if_noexcept_iterator<double*, std::move_iterator<double*> >(double*)
+  0.00     55.55     0.00     6000     0.00     0.00  void std::_Destroy<double*>(double*, double*)
+  0.00     55.55     0.00     6000     0.00     0.00  void std::_Destroy<double*, double>(double*, double*, std::allocator<double>&)
+  0.00     55.55     0.00     3003     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00     55.55     0.00     3000     0.00     0.00  __gnu_cxx::new_allocator<double>::deallocate(double*, unsigned long)
+  0.00     55.55     0.00     3000     0.00     0.00  __gnu_cxx::new_allocator<double>::allocate(unsigned long, void const*)
+  0.00     55.55     0.00     3000     0.00     0.00  __gnu_cxx::new_allocator<double>::new_allocator()
+  0.00     55.55     0.00     3000     0.00     0.00  __gnu_cxx::new_allocator<double>::~new_allocator()
+  0.00     55.55     0.00     3000     0.00     0.00  __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::__normal_iterator(double const* const&)
+  0.00     55.55     0.00     3000     0.00     0.00  __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::base() const
+  0.00     55.55     0.00     3000     0.00     0.00  std::vector<double, std::allocator<double> >::_M_check_len(unsigned long, char const*) const
+  0.00     55.55     0.00     3000     0.00     0.00  std::allocator<double>::allocator()
+  0.00     55.55     0.00     3000     0.00     0.00  std::allocator<double>::~allocator()
+  0.00     55.55     0.00     3000     0.00     0.00  std::_Iter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, true>::_S_base(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >)
+  0.00     55.55     0.00     3000     0.00     0.00  double* std::__copy_move<true, true, std::random_access_iterator_tag>::__copy_m<double>(double const*, double const*, double*)
+  0.00     55.55     0.00     3000     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long)
+  0.00     55.55     0.00     3000     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl()
+  0.00     55.55     0.00     3000     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl()
+  0.00     55.55     0.00     3000     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::_Vector_base()
+  0.00     55.55     0.00     3000     0.00     0.00  std::_Vector_base<double, std::allocator<double> >::~_Vector_base()
+  0.00     55.55     0.00     3000     0.00     0.00  double* std::__uninitialized_copy<true>::__uninit_copy<std::move_iterator<double*>, double*>(std::move_iterator<double*>, std::move_iterator<double*>, double*)
+  0.00     55.55     0.00     3000     0.00     0.00  void std::__uninitialized_default_n_1<true>::__uninit_default_n<double*, unsigned long>(double*, unsigned long)
+  0.00     55.55     0.00     3000     0.00     0.00  std::vector<double, std::allocator<double> >::_M_default_append(unsigned long)
+  0.00     55.55     0.00     3000     0.00     0.00  std::vector<double, std::allocator<double> >::vector()
+  0.00     55.55     0.00     3000     0.00     0.00  std::vector<double, std::allocator<double> >::~vector()
+  0.00     55.55     0.00     3000     0.00     0.00  void std::_Construct<std::vector<double, std::allocator<double> >>(std::vector<double, std::allocator<double> >*)
+  0.00     55.55     0.00     3000     0.00     0.00  std::_Niter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >)
+  0.00     55.55     0.00     3000     0.00     0.00  double* std::__copy_move_a<true, double*, double*>(double*, double*, double*)
+  0.00     55.55     0.00     3000     0.00     0.00  double* std::__copy_move_a2<true, double*, double*>(double*, double*, double*)
+  0.00     55.55     0.00     3000     0.00     0.00  double* std::uninitialized_copy<std::move_iterator<double*>, double*>(std::move_iterator<double*>, std::move_iterator<double*>, double*)
+  0.00     55.55     0.00     3000     0.00     0.00  double* std::__uninitialized_copy_a<std::move_iterator<double*>, double*, double>(std::move_iterator<double*>, std::move_iterator<double*>, double*, std::allocator<double>&)
+  0.00     55.55     0.00     3000     0.00     0.00  void std::__uninitialized_default_n<double*, unsigned long>(double*, unsigned long)
+  0.00     55.55     0.00     3000     0.00     0.00  void std::__uninitialized_default_n_a<double*, unsigned long, double>(double*, unsigned long, std::allocator<double>&)
+  0.00     55.55     0.00     3000     0.00     0.00  double* std::__uninitialized_move_if_noexcept_a<double*, double*, std::allocator<double> >(double*, double*, double*, std::allocator<double>&)
+  0.00     55.55     0.00     3000     0.00     0.00  double* std::copy<std::move_iterator<double*>, double*>(std::move_iterator<double*>, std::move_iterator<double*>, double*)
+  0.00     55.55     0.00     3000     0.00     0.00  double* std::fill_n<double*, unsigned long, double>(double*, unsigned long, double const&)
+  0.00     55.55     0.00     3000     0.00     0.00  void std::_Destroy<std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >*)
+  0.00     55.55     0.00     3000     0.00     0.00  operator new(unsigned long, void*)
+  0.00     55.55     0.00     2000     0.00     0.00  std::vector<double, std::allocator<double> >::begin() const
+  0.00     55.55     0.00     1000     0.00     0.00  std::vector<double, std::allocator<double> >::end() const
+  0.00     55.55     0.00     1000     0.00     0.00  bool std::__equal<false>::equal<double const*, double const*>(double const*, double const*, double const*)
+  0.00     55.55     0.00     1000     0.00     0.00  bool std::__equal_aux<double const*, double const*>(double const*, double const*, double const*)
+  0.00     55.55     0.00     1000     0.00     0.00  bool std::equal<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >)
+  0.00     55.55     0.00     1000     0.00     0.00  bool std::operator==<double, std::allocator<double> >(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&)
+  0.00     55.55     0.00       12     0.00     0.00  std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_get_Tp_allocator()
+  0.00     55.55     0.00        9     0.00     0.00  __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::max_size() const
+  0.00     55.55     0.00        6     0.00     0.00  std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_get_Tp_allocator() const
+  0.00     55.55     0.00        6     0.00     0.00  std::move_iterator<std::vector<double, std::allocator<double> >*>::base() const
+  0.00     55.55     0.00        6     0.00     0.00  std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::max_size() const
+  0.00     55.55     0.00        6     0.00     0.00  void std::_Destroy_aux<false>::__destroy<std::vector<double, std::allocator<double> >*>(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*)
+  0.00     55.55     0.00        6     0.00     0.00  std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_deallocate(std::vector<double, std::allocator<double> >*, unsigned long)
+  0.00     55.55     0.00        6     0.00     0.00  std::move_iterator<std::vector<double, std::allocator<double> >*>::move_iterator(std::vector<double, std::allocator<double> >*)
+  0.00     55.55     0.00        6     0.00     0.00  std::enable_if<std::allocator_traits<std::allocator<std::vector<double, std::allocator<double> > > >::__maxsize_helper<std::allocator<std::vector<double, std::allocator<double> > > const>::value, unsigned long>::type std::allocator_traits<std::allocator<std::vector<double, std::allocator<double> > > >::_S_max_size<std::allocator<std::vector<double, std::allocator<double> > > const>(std::allocator<std::vector<double, std::allocator<double> > > const&)
+  0.00     55.55     0.00        6     0.00     0.00  std::allocator_traits<std::allocator<std::vector<double, std::allocator<double> > > >::max_size(std::allocator<std::vector<double, std::allocator<double> > > const&)
+  0.00     55.55     0.00        6     0.00     0.00  std::move_iterator<std::vector<double, std::allocator<double> >*> std::__make_move_if_noexcept_iterator<std::vector<double, std::allocator<double> >*, std::move_iterator<std::vector<double, std::allocator<double> >*> >(std::vector<double, std::allocator<double> >*)
+  0.00     55.55     0.00        6     0.00     0.00  void std::_Destroy<std::vector<double, std::allocator<double> >*>(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*)
+  0.00     55.55     0.00        6     0.00     0.00  void std::_Destroy<std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > >&)
+  0.00     55.55     0.00        3     0.00     0.00  __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::deallocate(std::vector<double, std::allocator<double> >*, unsigned long)
+  0.00     55.55     0.00        3     0.00     0.00  __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::allocate(unsigned long, void const*)
+  0.00     55.55     0.00        3     0.00     0.00  __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::new_allocator()
+  0.00     55.55     0.00        3     0.00     0.00  __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::~new_allocator()
+  0.00     55.55     0.00        3     0.00     0.00  __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >::__normal_iterator(std::vector<double, std::allocator<double> > const* const&)
+  0.00     55.55     0.00        3     0.00     0.00  __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >::base() const
+  0.00     55.55     0.00        3     0.00     0.14  std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_check_len(unsigned long, char const*) const
+  0.00     55.55     0.00        3     0.00     0.00  std::allocator<std::vector<double, std::allocator<double> > >::allocator()
+  0.00     55.55     0.00        3     0.00     0.00  std::allocator<std::vector<double, std::allocator<double> > >::~allocator()
+  0.00     55.55     0.00        3     0.00     0.00  std::_Iter_base<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, true>::_S_base(__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >)
+  0.00     55.55     0.00        3     0.00     0.00  std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_allocate(unsigned long)
+  0.00     55.55     0.00        3     0.00     0.00  std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_Vector_impl::_Vector_impl()
+  0.00     55.55     0.00        3     0.00     0.00  std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_Vector_impl::~_Vector_impl()
+  0.00     55.55     0.00        3     0.00     0.00  std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_Vector_base()
+  0.00     55.55     0.00        3     0.00     0.00  std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::~_Vector_base()
+  0.00     55.55     0.00        3     0.00     0.00  std::vector<double, std::allocator<double> >* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*>, std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*)
+  0.00     55.55     0.00        3     0.00     0.00  void std::__uninitialized_default_n_1<false>::__uninit_default_n<std::vector<double, std::allocator<double> >*, unsigned long>(std::vector<double, std::allocator<double> >*, unsigned long)
+  0.00     55.55     0.00        3     0.00     0.18  std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_default_append(unsigned long)
+  0.00     55.55     0.00        3     0.00     0.00  std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::vector()
+  0.00     55.55     0.00        3     0.00     0.00  std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::~vector()
+  0.00     55.55     0.00        3     0.00     0.00  std::_Niter_base<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > > >(__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >)
+  0.00     55.55     0.00        3     0.00     0.00  std::vector<double, std::allocator<double> >* std::uninitialized_copy<std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*>, std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*)
+  0.00     55.55     0.00        3     0.00     0.00  std::vector<double, std::allocator<double> >* std::__uninitialized_copy_a<std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> > >(std::move_iterator<std::vector<double, std::allocator<double> >*>, std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > >&)
+  0.00     55.55     0.00        3     0.00     0.00  void std::__uninitialized_default_n<std::vector<double, std::allocator<double> >*, unsigned long>(std::vector<double, std::allocator<double> >*, unsigned long)
+  0.00     55.55     0.00        3     0.00     0.00  void std::__uninitialized_default_n_a<std::vector<double, std::allocator<double> >*, unsigned long, std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >*, unsigned long, std::allocator<std::vector<double, std::allocator<double> > >&)
+  0.00     55.55     0.00        3     0.00     0.00  std::vector<double, std::allocator<double> >* std::__uninitialized_move_if_noexcept_a<std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > > >(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > >&)
+  0.00     55.55     0.00        3     0.00     0.00  bool std::operator==<std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*> const&, std::move_iterator<std::vector<double, std::allocator<double> >*> const&)
+  0.00     55.55     0.00        3     0.00     0.00  bool std::operator!=<std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*> const&, std::move_iterator<std::vector<double, std::allocator<double> >*> const&)
+  0.00     55.55     0.00        2     0.00     0.00  std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::begin() const
+  0.00     55.55     0.00        1     0.00     0.00  std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::end() const
+  0.00     55.55     0.00        1     0.00     0.00  bool std::__equal<false>::equal<std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*>(std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*)
+  0.00     55.55     0.00        1     0.00     0.00  bool std::__equal_aux<std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*>(std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*)
+  0.00     55.55     0.00        1     0.00     0.00  bool std::equal<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > > >(__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >)
+  0.00     55.55     0.00        1     0.00     0.47  operator*(std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.02% of 55.55 seconds
+
+index % time    self  children    called     name
+                                 106             main <cycle 1> [1]
+                                   1             operator*(std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&) <cycle 1> [11]
+[1]     99.2   36.10   18.99       1+106     main <cycle 1> [1]
+                5.94    0.00 291535769/291535769     std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::operator[](unsigned long) const [3]
+                5.50    0.00 262912366/262912366     std::vector<double, std::allocator<double> >::operator[](unsigned long) const [4]
+                3.12    0.00 138585652/141588652     std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::operator[](unsigned long) [5]
+                3.09    0.00 151069581/154069581     std::vector<double, std::allocator<double> >::operator[](unsigned long) [6]
+                0.01    0.85       2/3           id(unsigned int) [7]
+                0.40    0.07       1/1           bool std::operator==<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >(std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&) [12]
+                0.00    0.00       3/3           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::~vector() [112]
+                                   1             operator*(std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&) <cycle 1> [11]
+                                 106             main <cycle 1> [1]
+-----------------------------------------------
+                5.94    0.00 291535769/291535769     main <cycle 1> [1]
+[3]     10.7    5.94    0.00 291535769         std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::operator[](unsigned long) const [3]
+-----------------------------------------------
+                5.50    0.00 262912366/262912366     main <cycle 1> [1]
+[4]      9.9    5.50    0.00 262912366         std::vector<double, std::allocator<double> >::operator[](unsigned long) const [4]
+-----------------------------------------------
+                0.07    0.00 3003000/141588652     id(unsigned int) [7]
+                3.12    0.00 138585652/141588652     main <cycle 1> [1]
+[5]      5.7    3.19    0.00 141588652         std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::operator[](unsigned long) [5]
+-----------------------------------------------
+                0.06    0.00 3000000/154069581     id(unsigned int) [7]
+                3.09    0.00 151069581/154069581     main <cycle 1> [1]
+[6]      5.7    3.15    0.00 154069581         std::vector<double, std::allocator<double> >::operator[](unsigned long) [6]
+-----------------------------------------------
+                0.01    0.43       1/3           operator*(std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&) <cycle 1> [11]
+                0.01    0.85       2/3           main <cycle 1> [1]
+[7]      2.3    0.02    1.28       3         id(unsigned int) [7]
+                0.03    0.75       3/3           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::resize(unsigned long) [9]
+                0.35    0.02    3000/3000        std::vector<double, std::allocator<double> >::resize(unsigned long) [14]
+                0.07    0.00 3003000/141588652     std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::operator[](unsigned long) [5]
+                0.06    0.00 3000000/154069581     std::vector<double, std::allocator<double> >::operator[](unsigned long) [6]
+                0.00    0.00       3/3           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::vector() [111]
+-----------------------------------------------
+                0.04    0.00       1/24          operator*(std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&) <cycle 1> [11]
+                0.07    0.00       2/24          bool std::operator==<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >(std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&) [12]
+                0.11    0.00       3/24          std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_default_append(unsigned long) [10]
+                0.22    0.00       6/24          std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::resize(unsigned long) [9]
+                0.43    0.00      12/24          std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_check_len(unsigned long, char const*) const [13]
+[8]      1.5    0.86    0.00      24         std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::size() const [8]
+-----------------------------------------------
+                0.03    0.75       3/3           id(unsigned int) [7]
+[9]      1.4    0.03    0.75       3         std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::resize(unsigned long) [9]
+                0.00    0.54       3/3           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_default_append(unsigned long) [10]
+                0.22    0.00       6/24          std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::size() const [8]
+-----------------------------------------------
+                0.00    0.54       3/3           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::resize(unsigned long) [9]
+[10]     1.0    0.00    0.54       3         std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_default_append(unsigned long) [10]
+                0.00    0.43       3/3           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_check_len(unsigned long, char const*) const [13]
+                0.11    0.00       3/24          std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::size() const [8]
+                0.00    0.00       9/12          std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_get_Tp_allocator() [82]
+                0.00    0.00       3/3           std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_allocate(unsigned long) [104]
+                0.00    0.00       3/3           std::vector<double, std::allocator<double> >* std::__uninitialized_move_if_noexcept_a<std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > > >(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > >&) [118]
+                0.00    0.00       3/3           void std::__uninitialized_default_n_a<std::vector<double, std::allocator<double> >*, unsigned long, std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >*, unsigned long, std::allocator<std::vector<double, std::allocator<double> > >&) [117]
+                0.00    0.00       3/6           void std::_Destroy<std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > >&) [94]
+                0.00    0.00       3/6           std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_deallocate(std::vector<double, std::allocator<double> >*, unsigned long) [88]
+-----------------------------------------------
+                                   1             main <cycle 1> [1]
+[11]     0.8    0.00    0.47       1         operator*(std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&) <cycle 1> [11]
+                0.01    0.43       1/3           id(unsigned int) [7]
+                0.04    0.00       1/24          std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::size() const [8]
+                                   1             main <cycle 1> [1]
+-----------------------------------------------
+                0.40    0.07       1/1           main <cycle 1> [1]
+[12]     0.8    0.40    0.07       1         bool std::operator==<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >(std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&) [12]
+                0.07    0.00       2/24          std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::size() const [8]
+                0.00    0.00       2/2           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::begin() const [121]
+                0.00    0.00       1/1           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::end() const [122]
+                0.00    0.00       1/1           bool std::equal<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > > >(__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >) [125]
+-----------------------------------------------
+                0.00    0.43       3/3           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_default_append(unsigned long) [10]
+[13]     0.8    0.00    0.43       3         std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_check_len(unsigned long, char const*) const [13]
+                0.43    0.00      12/24          std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::size() const [8]
+                0.00    0.00       6/6           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::max_size() const [86]
+                0.00    0.00       3/3003        unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [46]
+-----------------------------------------------
+                0.35    0.02    3000/3000        id(unsigned int) [7]
+[14]     0.7    0.35    0.02    3000         std::vector<double, std::allocator<double> >::resize(unsigned long) [14]
+                0.00    0.02    3000/3000        std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) [16]
+                0.00    0.00    6000/23000       std::vector<double, std::allocator<double> >::size() const [27]
+-----------------------------------------------
+                0.00    0.02    3000/3000        void std::__uninitialized_default_n<double*, unsigned long>(double*, unsigned long) [18]
+[15]     0.0    0.00    0.02    3000         void std::__uninitialized_default_n_1<true>::__uninit_default_n<double*, unsigned long>(double*, unsigned long) [15]
+                0.00    0.02    3000/3000        double* std::fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) [20]
+-----------------------------------------------
+                0.00    0.02    3000/3000        std::vector<double, std::allocator<double> >::resize(unsigned long) [14]
+[16]     0.0    0.00    0.02    3000         std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) [16]
+                0.00    0.02    3000/3000        void std::__uninitialized_default_n_a<double*, unsigned long, double>(double*, unsigned long, std::allocator<double>&) [19]
+                0.00    0.00    9000/12000       std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator() [29]
+                0.00    0.00    3000/3000        std::vector<double, std::allocator<double> >::_M_check_len(unsigned long, char const*) const [53]
+                0.00    0.00    3000/23000       std::vector<double, std::allocator<double> >::size() const [27]
+                0.00    0.00    3000/3000        std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long) [58]
+                0.00    0.00    3000/3000        double* std::__uninitialized_move_if_noexcept_a<double*, double*, std::allocator<double> >(double*, double*, double*, std::allocator<double>&) [72]
+                0.00    0.00    3000/6000        void std::_Destroy<double*, double>(double*, double*, std::allocator<double>&) [45]
+                0.00    0.00    3000/6000        std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long) [37]
+-----------------------------------------------
+                0.02    0.00    3000/3000        double* std::fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) [20]
+[17]     0.0    0.02    0.00    3000         __gnu_cxx::__enable_if<std::__is_scalar<double>::__value, double*>::__type std::__fill_n_a<double*, unsigned long, double>(double*, unsigned long, double const&) [17]
+-----------------------------------------------
+                0.00    0.02    3000/3000        void std::__uninitialized_default_n_a<double*, unsigned long, double>(double*, unsigned long, std::allocator<double>&) [19]
+[18]     0.0    0.00    0.02    3000         void std::__uninitialized_default_n<double*, unsigned long>(double*, unsigned long) [18]
+                0.00    0.02    3000/3000        void std::__uninitialized_default_n_1<true>::__uninit_default_n<double*, unsigned long>(double*, unsigned long) [15]
+-----------------------------------------------
+                0.00    0.02    3000/3000        std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) [16]
+[19]     0.0    0.00    0.02    3000         void std::__uninitialized_default_n_a<double*, unsigned long, double>(double*, unsigned long, std::allocator<double>&) [19]
+                0.00    0.02    3000/3000        void std::__uninitialized_default_n<double*, unsigned long>(double*, unsigned long) [18]
+-----------------------------------------------
+                0.00    0.02    3000/3000        void std::__uninitialized_default_n_1<true>::__uninit_default_n<double*, unsigned long>(double*, unsigned long) [15]
+[20]     0.0    0.00    0.02    3000         double* std::fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) [20]
+                0.02    0.00    3000/3000        __gnu_cxx::__enable_if<std::__is_scalar<double>::__value, double*>::__type std::__fill_n_a<double*, unsigned long, double>(double*, unsigned long, double const&) [17]
+                0.00    0.00    3000/12000       std::_Niter_base<double*>::iterator_type std::__niter_base<double*>(double*) [30]
+-----------------------------------------------
+                0.00    0.00    2000/23000       bool std::operator==<double, std::allocator<double> >(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&) [81]
+                0.00    0.00    3000/23000       std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) [16]
+                0.00    0.00    6000/23000       std::vector<double, std::allocator<double> >::resize(unsigned long) [14]
+                0.00    0.00   12000/23000       std::vector<double, std::allocator<double> >::_M_check_len(unsigned long, char const*) const [53]
+[27]     0.0    0.00    0.00   23000         std::vector<double, std::allocator<double> >::size() const [27]
+-----------------------------------------------
+                0.00    0.00   12000/12000       std::_Niter_base<double*>::iterator_type std::__niter_base<double*>(double*) [30]
+[28]     0.0    0.00    0.00   12000         std::_Iter_base<double*, false>::_S_base(double*) [28]
+-----------------------------------------------
+                0.00    0.00    3000/12000       std::vector<double, std::allocator<double> >::~vector() [65]
+                0.00    0.00    9000/12000       std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) [16]
+[29]     0.0    0.00    0.00   12000         std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator() [29]
+-----------------------------------------------
+                0.00    0.00    3000/12000       double* std::fill_n<double*, unsigned long, double>(double*, unsigned long, double const&) [20]
+                0.00    0.00    9000/12000       double* std::__copy_move_a2<true, double*, double*>(double*, double*, double*) [69]
+[30]     0.0    0.00    0.00   12000         std::_Niter_base<double*>::iterator_type std::__niter_base<double*>(double*) [30]
+                0.00    0.00   12000/12000       std::_Iter_base<double*, false>::_S_base(double*) [28]
+-----------------------------------------------
+                0.00    0.00    3000/9000        __gnu_cxx::new_allocator<double>::allocate(unsigned long, void const*) [48]
+                0.00    0.00    6000/9000        std::enable_if<std::allocator_traits<std::allocator<double> >::__maxsize_helper<std::allocator<double> const>::value, unsigned long>::type std::allocator_traits<std::allocator<double> >::_S_max_size<std::allocator<double> const>(std::allocator<double> const&) [39]
+[31]     0.0    0.00    0.00    9000         __gnu_cxx::new_allocator<double>::max_size() const [31]
+-----------------------------------------------
+                0.00    0.00    6000/6000        std::vector<double, std::allocator<double> >::max_size() const [34]
+[32]     0.0    0.00    0.00    6000         std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator() const [32]
+-----------------------------------------------
+                0.00    0.00    6000/6000        std::_Iter_base<std::move_iterator<double*>, true>::_S_base(std::move_iterator<double*>) [35]
+[33]     0.0    0.00    0.00    6000         std::move_iterator<double*>::base() const [33]
+-----------------------------------------------
+                0.00    0.00    6000/6000        std::vector<double, std::allocator<double> >::_M_check_len(unsigned long, char const*) const [53]
+[34]     0.0    0.00    0.00    6000         std::vector<double, std::allocator<double> >::max_size() const [34]
+                0.00    0.00    6000/6000        std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator() const [32]
+                0.00    0.00    6000/6000        std::allocator_traits<std::allocator<double> >::max_size(std::allocator<double> const&) [40]
+-----------------------------------------------
+                0.00    0.00    6000/6000        std::_Miter_base<std::move_iterator<double*> >::iterator_type std::__miter_base<std::move_iterator<double*> >(std::move_iterator<double*>) [42]
+[35]     0.0    0.00    0.00    6000         std::_Iter_base<std::move_iterator<double*>, true>::_S_base(std::move_iterator<double*>) [35]
+                0.00    0.00    6000/6000        std::move_iterator<double*>::base() const [33]
+-----------------------------------------------
+                0.00    0.00    6000/6000        void std::_Destroy<double*>(double*, double*) [44]
+[36]     0.0    0.00    0.00    6000         void std::_Destroy_aux<true>::__destroy<double*>(double*, double*) [36]
+-----------------------------------------------
+                0.00    0.00    3000/6000        std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) [16]
+                0.00    0.00    3000/6000        std::_Vector_base<double, std::allocator<double> >::~_Vector_base() [62]
+[37]     0.0    0.00    0.00    6000         std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long) [37]
+                0.00    0.00    3000/3000        __gnu_cxx::new_allocator<double>::deallocate(double*, unsigned long) [47]
+-----------------------------------------------
+                0.00    0.00    6000/6000        std::move_iterator<double*> std::__make_move_if_noexcept_iterator<double*, std::move_iterator<double*> >(double*) [43]
+[38]     0.0    0.00    0.00    6000         std::move_iterator<double*>::move_iterator(double*) [38]
+-----------------------------------------------
+                0.00    0.00    6000/6000        std::allocator_traits<std::allocator<double> >::max_size(std::allocator<double> const&) [40]
+[39]     0.0    0.00    0.00    6000         std::enable_if<std::allocator_traits<std::allocator<double> >::__maxsize_helper<std::allocator<double> const>::value, unsigned long>::type std::allocator_traits<std::allocator<double> >::_S_max_size<std::allocator<double> const>(std::allocator<double> const&) [39]
+                0.00    0.00    6000/9000        __gnu_cxx::new_allocator<double>::max_size() const [31]
+-----------------------------------------------
+                0.00    0.00    6000/6000        std::vector<double, std::allocator<double> >::max_size() const [34]
+[40]     0.0    0.00    0.00    6000         std::allocator_traits<std::allocator<double> >::max_size(std::allocator<double> const&) [40]
+                0.00    0.00    6000/6000        std::enable_if<std::allocator_traits<std::allocator<double> >::__maxsize_helper<std::allocator<double> const>::value, unsigned long>::type std::allocator_traits<std::allocator<double> >::_S_max_size<std::allocator<double> const>(std::allocator<double> const&) [39]
+-----------------------------------------------
+                0.00    0.00    3000/6000        void std::_Destroy_aux<false>::__destroy<std::vector<double, std::allocator<double> >*>(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*) [87]
+                0.00    0.00    3000/6000        void std::__uninitialized_default_n_1<false>::__uninit_default_n<std::vector<double, std::allocator<double> >*, unsigned long>(std::vector<double, std::allocator<double> >*, unsigned long) [110]
+[41]     0.0    0.00    0.00    6000         std::vector<double, std::allocator<double> >* std::__addressof<std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >&) [41]
+-----------------------------------------------
+                0.00    0.00    6000/6000        double* std::copy<std::move_iterator<double*>, double*>(std::move_iterator<double*>, std::move_iterator<double*>, double*) [73]
+[42]     0.0    0.00    0.00    6000         std::_Miter_base<std::move_iterator<double*> >::iterator_type std::__miter_base<std::move_iterator<double*> >(std::move_iterator<double*>) [42]
+                0.00    0.00    6000/6000        std::_Iter_base<std::move_iterator<double*>, true>::_S_base(std::move_iterator<double*>) [35]
+-----------------------------------------------
+                0.00    0.00    6000/6000        double* std::__uninitialized_move_if_noexcept_a<double*, double*, std::allocator<double> >(double*, double*, double*, std::allocator<double>&) [72]
+[43]     0.0    0.00    0.00    6000         std::move_iterator<double*> std::__make_move_if_noexcept_iterator<double*, std::move_iterator<double*> >(double*) [43]
+                0.00    0.00    6000/6000        std::move_iterator<double*>::move_iterator(double*) [38]
+-----------------------------------------------
+                0.00    0.00    6000/6000        void std::_Destroy<double*, double>(double*, double*, std::allocator<double>&) [45]
+[44]     0.0    0.00    0.00    6000         void std::_Destroy<double*>(double*, double*) [44]
+                0.00    0.00    6000/6000        void std::_Destroy_aux<true>::__destroy<double*>(double*, double*) [36]
+-----------------------------------------------
+                0.00    0.00    3000/6000        std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) [16]
+                0.00    0.00    3000/6000        std::vector<double, std::allocator<double> >::~vector() [65]
+[45]     0.0    0.00    0.00    6000         void std::_Destroy<double*, double>(double*, double*, std::allocator<double>&) [45]
+                0.00    0.00    6000/6000        void std::_Destroy<double*>(double*, double*) [44]
+-----------------------------------------------
+                0.00    0.00       3/3003        std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_check_len(unsigned long, char const*) const [13]
+                0.00    0.00    3000/3003        std::vector<double, std::allocator<double> >::_M_check_len(unsigned long, char const*) const [53]
+[46]     0.0    0.00    0.00    3003         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [46]
+-----------------------------------------------
+                0.00    0.00    3000/3000        std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long) [37]
+[47]     0.0    0.00    0.00    3000         __gnu_cxx::new_allocator<double>::deallocate(double*, unsigned long) [47]
+-----------------------------------------------
+                0.00    0.00    3000/3000        std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long) [58]
+[48]     0.0    0.00    0.00    3000         __gnu_cxx::new_allocator<double>::allocate(unsigned long, void const*) [48]
+                0.00    0.00    3000/9000        __gnu_cxx::new_allocator<double>::max_size() const [31]
+-----------------------------------------------
+                0.00    0.00    3000/3000        std::allocator<double>::allocator() [54]
+[49]     0.0    0.00    0.00    3000         __gnu_cxx::new_allocator<double>::new_allocator() [49]
+-----------------------------------------------
+                0.00    0.00    3000/3000        std::allocator<double>::~allocator() [55]
+[50]     0.0    0.00    0.00    3000         __gnu_cxx::new_allocator<double>::~new_allocator() [50]
+-----------------------------------------------
+                0.00    0.00    1000/3000        std::vector<double, std::allocator<double> >::end() const [77]
+                0.00    0.00    2000/3000        std::vector<double, std::allocator<double> >::begin() const [76]
+[51]     0.0    0.00    0.00    3000         __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::__normal_iterator(double const* const&) [51]
+-----------------------------------------------
+                0.00    0.00    3000/3000        std::_Iter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, true>::_S_base(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [56]
+[52]     0.0    0.00    0.00    3000         __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::base() const [52]
+-----------------------------------------------
+                0.00    0.00    3000/3000        std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) [16]
+[53]     0.0    0.00    0.00    3000         std::vector<double, std::allocator<double> >::_M_check_len(unsigned long, char const*) const [53]
+                0.00    0.00   12000/23000       std::vector<double, std::allocator<double> >::size() const [27]
+                0.00    0.00    6000/6000        std::vector<double, std::allocator<double> >::max_size() const [34]
+                0.00    0.00    3000/3003        unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [46]
+-----------------------------------------------
+                0.00    0.00    3000/3000        std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl() [59]
+[54]     0.0    0.00    0.00    3000         std::allocator<double>::allocator() [54]
+                0.00    0.00    3000/3000        __gnu_cxx::new_allocator<double>::new_allocator() [49]
+-----------------------------------------------
+                0.00    0.00    3000/3000        std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl() [60]
+[55]     0.0    0.00    0.00    3000         std::allocator<double>::~allocator() [55]
+                0.00    0.00    3000/3000        __gnu_cxx::new_allocator<double>::~new_allocator() [50]
+-----------------------------------------------
+                0.00    0.00    3000/3000        std::_Niter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [67]
+[56]     0.0    0.00    0.00    3000         std::_Iter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, true>::_S_base(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [56]
+                0.00    0.00    3000/3000        __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::base() const [52]
+-----------------------------------------------
+                0.00    0.00    3000/3000        double* std::__copy_move_a<true, double*, double*>(double*, double*, double*) [68]
+[57]     0.0    0.00    0.00    3000         double* std::__copy_move<true, true, std::random_access_iterator_tag>::__copy_m<double>(double const*, double const*, double*) [57]
+-----------------------------------------------
+                0.00    0.00    3000/3000        std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) [16]
+[58]     0.0    0.00    0.00    3000         std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long) [58]
+                0.00    0.00    3000/3000        __gnu_cxx::new_allocator<double>::allocate(unsigned long, void const*) [48]
+-----------------------------------------------
+                0.00    0.00    3000/3000        std::_Vector_base<double, std::allocator<double> >::_Vector_base() [61]
+[59]     0.0    0.00    0.00    3000         std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl() [59]
+                0.00    0.00    3000/3000        std::allocator<double>::allocator() [54]
+-----------------------------------------------
+                0.00    0.00    3000/3000        std::_Vector_base<double, std::allocator<double> >::~_Vector_base() [62]
+[60]     0.0    0.00    0.00    3000         std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl() [60]
+                0.00    0.00    3000/3000        std::allocator<double>::~allocator() [55]
+-----------------------------------------------
+                0.00    0.00    3000/3000        std::vector<double, std::allocator<double> >::vector() [64]
+[61]     0.0    0.00    0.00    3000         std::_Vector_base<double, std::allocator<double> >::_Vector_base() [61]
+                0.00    0.00    3000/3000        std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl() [59]
+-----------------------------------------------
+                0.00    0.00    3000/3000        std::vector<double, std::allocator<double> >::~vector() [65]
+[62]     0.0    0.00    0.00    3000         std::_Vector_base<double, std::allocator<double> >::~_Vector_base() [62]
+                0.00    0.00    3000/6000        std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long) [37]
+                0.00    0.00    3000/3000        std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl() [60]
+-----------------------------------------------
+                0.00    0.00    3000/3000        double* std::uninitialized_copy<std::move_iterator<double*>, double*>(std::move_iterator<double*>, std::move_iterator<double*>, double*) [70]
+[63]     0.0    0.00    0.00    3000         double* std::__uninitialized_copy<true>::__uninit_copy<std::move_iterator<double*>, double*>(std::move_iterator<double*>, std::move_iterator<double*>, double*) [63]
+                0.00    0.00    3000/3000        double* std::copy<std::move_iterator<double*>, double*>(std::move_iterator<double*>, std::move_iterator<double*>, double*) [73]
+-----------------------------------------------
+                0.00    0.00    3000/3000        void std::_Construct<std::vector<double, std::allocator<double> >>(std::vector<double, std::allocator<double> >*) [66]
+[64]     0.0    0.00    0.00    3000         std::vector<double, std::allocator<double> >::vector() [64]
+                0.00    0.00    3000/3000        std::_Vector_base<double, std::allocator<double> >::_Vector_base() [61]
+-----------------------------------------------
+                0.00    0.00    3000/3000        void std::_Destroy<std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >*) [74]
+[65]     0.0    0.00    0.00    3000         std::vector<double, std::allocator<double> >::~vector() [65]
+                0.00    0.00    3000/12000       std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator() [29]
+                0.00    0.00    3000/6000        void std::_Destroy<double*, double>(double*, double*, std::allocator<double>&) [45]
+                0.00    0.00    3000/3000        std::_Vector_base<double, std::allocator<double> >::~_Vector_base() [62]
+-----------------------------------------------
+                0.00    0.00    3000/3000        void std::__uninitialized_default_n_1<false>::__uninit_default_n<std::vector<double, std::allocator<double> >*, unsigned long>(std::vector<double, std::allocator<double> >*, unsigned long) [110]
+[66]     0.0    0.00    0.00    3000         void std::_Construct<std::vector<double, std::allocator<double> >>(std::vector<double, std::allocator<double> >*) [66]
+                0.00    0.00    3000/3000        operator new(unsigned long, void*) [75]
+                0.00    0.00    3000/3000        std::vector<double, std::allocator<double> >::vector() [64]
+-----------------------------------------------
+                0.00    0.00    3000/3000        bool std::equal<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [80]
+[67]     0.0    0.00    0.00    3000         std::_Niter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [67]
+                0.00    0.00    3000/3000        std::_Iter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, true>::_S_base(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [56]
+-----------------------------------------------
+                0.00    0.00    3000/3000        double* std::__copy_move_a2<true, double*, double*>(double*, double*, double*) [69]
+[68]     0.0    0.00    0.00    3000         double* std::__copy_move_a<true, double*, double*>(double*, double*, double*) [68]
+                0.00    0.00    3000/3000        double* std::__copy_move<true, true, std::random_access_iterator_tag>::__copy_m<double>(double const*, double const*, double*) [57]
+-----------------------------------------------
+                0.00    0.00    3000/3000        double* std::copy<std::move_iterator<double*>, double*>(std::move_iterator<double*>, std::move_iterator<double*>, double*) [73]
+[69]     0.0    0.00    0.00    3000         double* std::__copy_move_a2<true, double*, double*>(double*, double*, double*) [69]
+                0.00    0.00    9000/12000       std::_Niter_base<double*>::iterator_type std::__niter_base<double*>(double*) [30]
+                0.00    0.00    3000/3000        double* std::__copy_move_a<true, double*, double*>(double*, double*, double*) [68]
+-----------------------------------------------
+                0.00    0.00    3000/3000        double* std::__uninitialized_copy_a<std::move_iterator<double*>, double*, double>(std::move_iterator<double*>, std::move_iterator<double*>, double*, std::allocator<double>&) [71]
+[70]     0.0    0.00    0.00    3000         double* std::uninitialized_copy<std::move_iterator<double*>, double*>(std::move_iterator<double*>, std::move_iterator<double*>, double*) [70]
+                0.00    0.00    3000/3000        double* std::__uninitialized_copy<true>::__uninit_copy<std::move_iterator<double*>, double*>(std::move_iterator<double*>, std::move_iterator<double*>, double*) [63]
+-----------------------------------------------
+                0.00    0.00    3000/3000        double* std::__uninitialized_move_if_noexcept_a<double*, double*, std::allocator<double> >(double*, double*, double*, std::allocator<double>&) [72]
+[71]     0.0    0.00    0.00    3000         double* std::__uninitialized_copy_a<std::move_iterator<double*>, double*, double>(std::move_iterator<double*>, std::move_iterator<double*>, double*, std::allocator<double>&) [71]
+                0.00    0.00    3000/3000        double* std::uninitialized_copy<std::move_iterator<double*>, double*>(std::move_iterator<double*>, std::move_iterator<double*>, double*) [70]
+-----------------------------------------------
+                0.00    0.00    3000/3000        std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) [16]
+[72]     0.0    0.00    0.00    3000         double* std::__uninitialized_move_if_noexcept_a<double*, double*, std::allocator<double> >(double*, double*, double*, std::allocator<double>&) [72]
+                0.00    0.00    6000/6000        std::move_iterator<double*> std::__make_move_if_noexcept_iterator<double*, std::move_iterator<double*> >(double*) [43]
+                0.00    0.00    3000/3000        double* std::__uninitialized_copy_a<std::move_iterator<double*>, double*, double>(std::move_iterator<double*>, std::move_iterator<double*>, double*, std::allocator<double>&) [71]
+-----------------------------------------------
+                0.00    0.00    3000/3000        double* std::__uninitialized_copy<true>::__uninit_copy<std::move_iterator<double*>, double*>(std::move_iterator<double*>, std::move_iterator<double*>, double*) [63]
+[73]     0.0    0.00    0.00    3000         double* std::copy<std::move_iterator<double*>, double*>(std::move_iterator<double*>, std::move_iterator<double*>, double*) [73]
+                0.00    0.00    6000/6000        std::_Miter_base<std::move_iterator<double*> >::iterator_type std::__miter_base<std::move_iterator<double*> >(std::move_iterator<double*>) [42]
+                0.00    0.00    3000/3000        double* std::__copy_move_a2<true, double*, double*>(double*, double*, double*) [69]
+-----------------------------------------------
+                0.00    0.00    3000/3000        void std::_Destroy_aux<false>::__destroy<std::vector<double, std::allocator<double> >*>(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*) [87]
+[74]     0.0    0.00    0.00    3000         void std::_Destroy<std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >*) [74]
+                0.00    0.00    3000/3000        std::vector<double, std::allocator<double> >::~vector() [65]
+-----------------------------------------------
+                0.00    0.00    3000/3000        void std::_Construct<std::vector<double, std::allocator<double> >>(std::vector<double, std::allocator<double> >*) [66]
+[75]     0.0    0.00    0.00    3000         operator new(unsigned long, void*) [75]
+-----------------------------------------------
+                0.00    0.00    2000/2000        bool std::operator==<double, std::allocator<double> >(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&) [81]
+[76]     0.0    0.00    0.00    2000         std::vector<double, std::allocator<double> >::begin() const [76]
+                0.00    0.00    2000/3000        __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::__normal_iterator(double const* const&) [51]
+-----------------------------------------------
+                0.00    0.00    1000/1000        bool std::operator==<double, std::allocator<double> >(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&) [81]
+[77]     0.0    0.00    0.00    1000         std::vector<double, std::allocator<double> >::end() const [77]
+                0.00    0.00    1000/3000        __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::__normal_iterator(double const* const&) [51]
+-----------------------------------------------
+                0.00    0.00    1000/1000        bool std::__equal_aux<double const*, double const*>(double const*, double const*, double const*) [79]
+[78]     0.0    0.00    0.00    1000         bool std::__equal<false>::equal<double const*, double const*>(double const*, double const*, double const*) [78]
+-----------------------------------------------
+                0.00    0.00    1000/1000        bool std::equal<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [80]
+[79]     0.0    0.00    0.00    1000         bool std::__equal_aux<double const*, double const*>(double const*, double const*, double const*) [79]
+                0.00    0.00    1000/1000        bool std::__equal<false>::equal<double const*, double const*>(double const*, double const*, double const*) [78]
+-----------------------------------------------
+                0.00    0.00    1000/1000        bool std::operator==<double, std::allocator<double> >(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&) [81]
+[80]     0.0    0.00    0.00    1000         bool std::equal<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [80]
+                0.00    0.00    3000/3000        std::_Niter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [67]
+                0.00    0.00    1000/1000        bool std::__equal_aux<double const*, double const*>(double const*, double const*, double const*) [79]
+-----------------------------------------------
+                0.00    0.00    1000/1000        bool std::__equal<false>::equal<std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*>(std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*) [123]
+[81]     0.0    0.00    0.00    1000         bool std::operator==<double, std::allocator<double> >(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&) [81]
+                0.00    0.00    2000/23000       std::vector<double, std::allocator<double> >::size() const [27]
+                0.00    0.00    2000/2000        std::vector<double, std::allocator<double> >::begin() const [76]
+                0.00    0.00    1000/1000        std::vector<double, std::allocator<double> >::end() const [77]
+                0.00    0.00    1000/1000        bool std::equal<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [80]
+-----------------------------------------------
+                0.00    0.00       3/12          std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::~vector() [112]
+                0.00    0.00       9/12          std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_default_append(unsigned long) [10]
+[82]     0.0    0.00    0.00      12         std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_get_Tp_allocator() [82]
+-----------------------------------------------
+                0.00    0.00       3/9           __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::allocate(unsigned long, void const*) [96]
+                0.00    0.00       6/9           std::enable_if<std::allocator_traits<std::allocator<std::vector<double, std::allocator<double> > > >::__maxsize_helper<std::allocator<std::vector<double, std::allocator<double> > > const>::value, unsigned long>::type std::allocator_traits<std::allocator<std::vector<double, std::allocator<double> > > >::_S_max_size<std::allocator<std::vector<double, std::allocator<double> > > const>(std::allocator<std::vector<double, std::allocator<double> > > const&) [90]
+[83]     0.0    0.00    0.00       9         __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::max_size() const [83]
+-----------------------------------------------
+                0.00    0.00       6/6           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::max_size() const [86]
+[84]     0.0    0.00    0.00       6         std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_get_Tp_allocator() const [84]
+-----------------------------------------------
+                0.00    0.00       6/6           bool std::operator==<std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*> const&, std::move_iterator<std::vector<double, std::allocator<double> >*> const&) [119]
+[85]     0.0    0.00    0.00       6         std::move_iterator<std::vector<double, std::allocator<double> >*>::base() const [85]
+-----------------------------------------------
+                0.00    0.00       6/6           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_check_len(unsigned long, char const*) const [13]
+[86]     0.0    0.00    0.00       6         std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::max_size() const [86]
+                0.00    0.00       6/6           std::allocator_traits<std::allocator<std::vector<double, std::allocator<double> > > >::max_size(std::allocator<std::vector<double, std::allocator<double> > > const&) [91]
+                0.00    0.00       6/6           std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_get_Tp_allocator() const [84]
+-----------------------------------------------
+                0.00    0.00       6/6           void std::_Destroy<std::vector<double, std::allocator<double> >*>(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*) [93]
+[87]     0.0    0.00    0.00       6         void std::_Destroy_aux<false>::__destroy<std::vector<double, std::allocator<double> >*>(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*) [87]
+                0.00    0.00    3000/3000        void std::_Destroy<std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >*) [74]
+                0.00    0.00    3000/6000        std::vector<double, std::allocator<double> >* std::__addressof<std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >&) [41]
+-----------------------------------------------
+                0.00    0.00       3/6           std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::~_Vector_base() [108]
+                0.00    0.00       3/6           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_default_append(unsigned long) [10]
+[88]     0.0    0.00    0.00       6         std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_deallocate(std::vector<double, std::allocator<double> >*, unsigned long) [88]
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::deallocate(std::vector<double, std::allocator<double> >*, unsigned long) [95]
+-----------------------------------------------
+                0.00    0.00       6/6           std::move_iterator<std::vector<double, std::allocator<double> >*> std::__make_move_if_noexcept_iterator<std::vector<double, std::allocator<double> >*, std::move_iterator<std::vector<double, std::allocator<double> >*> >(std::vector<double, std::allocator<double> >*) [92]
+[89]     0.0    0.00    0.00       6         std::move_iterator<std::vector<double, std::allocator<double> >*>::move_iterator(std::vector<double, std::allocator<double> >*) [89]
+-----------------------------------------------
+                0.00    0.00       6/6           std::allocator_traits<std::allocator<std::vector<double, std::allocator<double> > > >::max_size(std::allocator<std::vector<double, std::allocator<double> > > const&) [91]
+[90]     0.0    0.00    0.00       6         std::enable_if<std::allocator_traits<std::allocator<std::vector<double, std::allocator<double> > > >::__maxsize_helper<std::allocator<std::vector<double, std::allocator<double> > > const>::value, unsigned long>::type std::allocator_traits<std::allocator<std::vector<double, std::allocator<double> > > >::_S_max_size<std::allocator<std::vector<double, std::allocator<double> > > const>(std::allocator<std::vector<double, std::allocator<double> > > const&) [90]
+                0.00    0.00       6/9           __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::max_size() const [83]
+-----------------------------------------------
+                0.00    0.00       6/6           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::max_size() const [86]
+[91]     0.0    0.00    0.00       6         std::allocator_traits<std::allocator<std::vector<double, std::allocator<double> > > >::max_size(std::allocator<std::vector<double, std::allocator<double> > > const&) [91]
+                0.00    0.00       6/6           std::enable_if<std::allocator_traits<std::allocator<std::vector<double, std::allocator<double> > > >::__maxsize_helper<std::allocator<std::vector<double, std::allocator<double> > > const>::value, unsigned long>::type std::allocator_traits<std::allocator<std::vector<double, std::allocator<double> > > >::_S_max_size<std::allocator<std::vector<double, std::allocator<double> > > const>(std::allocator<std::vector<double, std::allocator<double> > > const&) [90]
+-----------------------------------------------
+                0.00    0.00       6/6           std::vector<double, std::allocator<double> >* std::__uninitialized_move_if_noexcept_a<std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > > >(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > >&) [118]
+[92]     0.0    0.00    0.00       6         std::move_iterator<std::vector<double, std::allocator<double> >*> std::__make_move_if_noexcept_iterator<std::vector<double, std::allocator<double> >*, std::move_iterator<std::vector<double, std::allocator<double> >*> >(std::vector<double, std::allocator<double> >*) [92]
+                0.00    0.00       6/6           std::move_iterator<std::vector<double, std::allocator<double> >*>::move_iterator(std::vector<double, std::allocator<double> >*) [89]
+-----------------------------------------------
+                0.00    0.00       6/6           void std::_Destroy<std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > >&) [94]
+[93]     0.0    0.00    0.00       6         void std::_Destroy<std::vector<double, std::allocator<double> >*>(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*) [93]
+                0.00    0.00       6/6           void std::_Destroy_aux<false>::__destroy<std::vector<double, std::allocator<double> >*>(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*) [87]
+-----------------------------------------------
+                0.00    0.00       3/6           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::~vector() [112]
+                0.00    0.00       3/6           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_default_append(unsigned long) [10]
+[94]     0.0    0.00    0.00       6         void std::_Destroy<std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > >&) [94]
+                0.00    0.00       6/6           void std::_Destroy<std::vector<double, std::allocator<double> >*>(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*) [93]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_deallocate(std::vector<double, std::allocator<double> >*, unsigned long) [88]
+[95]     0.0    0.00    0.00       3         __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::deallocate(std::vector<double, std::allocator<double> >*, unsigned long) [95]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_allocate(unsigned long) [104]
+[96]     0.0    0.00    0.00       3         __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::allocate(unsigned long, void const*) [96]
+                0.00    0.00       3/9           __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::max_size() const [83]
+-----------------------------------------------
+                0.00    0.00       3/3           std::allocator<std::vector<double, std::allocator<double> > >::allocator() [101]
+[97]     0.0    0.00    0.00       3         __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::new_allocator() [97]
+-----------------------------------------------
+                0.00    0.00       3/3           std::allocator<std::vector<double, std::allocator<double> > >::~allocator() [102]
+[98]     0.0    0.00    0.00       3         __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::~new_allocator() [98]
+-----------------------------------------------
+                0.00    0.00       1/3           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::end() const [122]
+                0.00    0.00       2/3           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::begin() const [121]
+[99]     0.0    0.00    0.00       3         __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >::__normal_iterator(std::vector<double, std::allocator<double> > const* const&) [99]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Iter_base<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, true>::_S_base(__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >) [103]
+[100]    0.0    0.00    0.00       3         __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >::base() const [100]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_Vector_impl::_Vector_impl() [105]
+[101]    0.0    0.00    0.00       3         std::allocator<std::vector<double, std::allocator<double> > >::allocator() [101]
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::new_allocator() [97]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_Vector_impl::~_Vector_impl() [106]
+[102]    0.0    0.00    0.00       3         std::allocator<std::vector<double, std::allocator<double> > >::~allocator() [102]
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::~new_allocator() [98]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Niter_base<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > > >(__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >) [113]
+[103]    0.0    0.00    0.00       3         std::_Iter_base<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, true>::_S_base(__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >) [103]
+                0.00    0.00       3/3           __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >::base() const [100]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_default_append(unsigned long) [10]
+[104]    0.0    0.00    0.00       3         std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_allocate(unsigned long) [104]
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::allocate(unsigned long, void const*) [96]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_Vector_base() [107]
+[105]    0.0    0.00    0.00       3         std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_Vector_impl::_Vector_impl() [105]
+                0.00    0.00       3/3           std::allocator<std::vector<double, std::allocator<double> > >::allocator() [101]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::~_Vector_base() [108]
+[106]    0.0    0.00    0.00       3         std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_Vector_impl::~_Vector_impl() [106]
+                0.00    0.00       3/3           std::allocator<std::vector<double, std::allocator<double> > >::~allocator() [102]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::vector() [111]
+[107]    0.0    0.00    0.00       3         std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_Vector_base() [107]
+                0.00    0.00       3/3           std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_Vector_impl::_Vector_impl() [105]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::~vector() [112]
+[108]    0.0    0.00    0.00       3         std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::~_Vector_base() [108]
+                0.00    0.00       3/6           std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_deallocate(std::vector<double, std::allocator<double> >*, unsigned long) [88]
+                0.00    0.00       3/3           std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_Vector_impl::~_Vector_impl() [106]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<double, std::allocator<double> >* std::uninitialized_copy<std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*>, std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*) [114]
+[109]    0.0    0.00    0.00       3         std::vector<double, std::allocator<double> >* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*>, std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*) [109]
+                0.00    0.00       3/3           bool std::operator!=<std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*> const&, std::move_iterator<std::vector<double, std::allocator<double> >*> const&) [120]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::__uninitialized_default_n<std::vector<double, std::allocator<double> >*, unsigned long>(std::vector<double, std::allocator<double> >*, unsigned long) [116]
+[110]    0.0    0.00    0.00       3         void std::__uninitialized_default_n_1<false>::__uninit_default_n<std::vector<double, std::allocator<double> >*, unsigned long>(std::vector<double, std::allocator<double> >*, unsigned long) [110]
+                0.00    0.00    3000/6000        std::vector<double, std::allocator<double> >* std::__addressof<std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >&) [41]
+                0.00    0.00    3000/3000        void std::_Construct<std::vector<double, std::allocator<double> >>(std::vector<double, std::allocator<double> >*) [66]
+-----------------------------------------------
+                0.00    0.00       3/3           id(unsigned int) [7]
+[111]    0.0    0.00    0.00       3         std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::vector() [111]
+                0.00    0.00       3/3           std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_Vector_base() [107]
+-----------------------------------------------
+                0.00    0.00       3/3           main <cycle 1> [1]
+[112]    0.0    0.00    0.00       3         std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::~vector() [112]
+                0.00    0.00       3/12          std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_get_Tp_allocator() [82]
+                0.00    0.00       3/3           std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::~_Vector_base() [108]
+                0.00    0.00       3/6           void std::_Destroy<std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > >&) [94]
+-----------------------------------------------
+                0.00    0.00       3/3           bool std::equal<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > > >(__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >) [125]
+[113]    0.0    0.00    0.00       3         std::_Niter_base<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > > >(__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >) [113]
+                0.00    0.00       3/3           std::_Iter_base<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, true>::_S_base(__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >) [103]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<double, std::allocator<double> >* std::__uninitialized_copy_a<std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> > >(std::move_iterator<std::vector<double, std::allocator<double> >*>, std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > >&) [115]
+[114]    0.0    0.00    0.00       3         std::vector<double, std::allocator<double> >* std::uninitialized_copy<std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*>, std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*) [114]
+                0.00    0.00       3/3           std::vector<double, std::allocator<double> >* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*>, std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*) [109]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<double, std::allocator<double> >* std::__uninitialized_move_if_noexcept_a<std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > > >(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > >&) [118]
+[115]    0.0    0.00    0.00       3         std::vector<double, std::allocator<double> >* std::__uninitialized_copy_a<std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> > >(std::move_iterator<std::vector<double, std::allocator<double> >*>, std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > >&) [115]
+                0.00    0.00       3/3           std::vector<double, std::allocator<double> >* std::uninitialized_copy<std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*>, std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*) [114]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::__uninitialized_default_n_a<std::vector<double, std::allocator<double> >*, unsigned long, std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >*, unsigned long, std::allocator<std::vector<double, std::allocator<double> > >&) [117]
+[116]    0.0    0.00    0.00       3         void std::__uninitialized_default_n<std::vector<double, std::allocator<double> >*, unsigned long>(std::vector<double, std::allocator<double> >*, unsigned long) [116]
+                0.00    0.00       3/3           void std::__uninitialized_default_n_1<false>::__uninit_default_n<std::vector<double, std::allocator<double> >*, unsigned long>(std::vector<double, std::allocator<double> >*, unsigned long) [110]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_default_append(unsigned long) [10]
+[117]    0.0    0.00    0.00       3         void std::__uninitialized_default_n_a<std::vector<double, std::allocator<double> >*, unsigned long, std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >*, unsigned long, std::allocator<std::vector<double, std::allocator<double> > >&) [117]
+                0.00    0.00       3/3           void std::__uninitialized_default_n<std::vector<double, std::allocator<double> >*, unsigned long>(std::vector<double, std::allocator<double> >*, unsigned long) [116]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_default_append(unsigned long) [10]
+[118]    0.0    0.00    0.00       3         std::vector<double, std::allocator<double> >* std::__uninitialized_move_if_noexcept_a<std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > > >(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > >&) [118]
+                0.00    0.00       6/6           std::move_iterator<std::vector<double, std::allocator<double> >*> std::__make_move_if_noexcept_iterator<std::vector<double, std::allocator<double> >*, std::move_iterator<std::vector<double, std::allocator<double> >*> >(std::vector<double, std::allocator<double> >*) [92]
+                0.00    0.00       3/3           std::vector<double, std::allocator<double> >* std::__uninitialized_copy_a<std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> > >(std::move_iterator<std::vector<double, std::allocator<double> >*>, std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > >&) [115]
+-----------------------------------------------
+                0.00    0.00       3/3           bool std::operator!=<std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*> const&, std::move_iterator<std::vector<double, std::allocator<double> >*> const&) [120]
+[119]    0.0    0.00    0.00       3         bool std::operator==<std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*> const&, std::move_iterator<std::vector<double, std::allocator<double> >*> const&) [119]
+                0.00    0.00       6/6           std::move_iterator<std::vector<double, std::allocator<double> >*>::base() const [85]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<double, std::allocator<double> >* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*>, std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*) [109]
+[120]    0.0    0.00    0.00       3         bool std::operator!=<std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*> const&, std::move_iterator<std::vector<double, std::allocator<double> >*> const&) [120]
+                0.00    0.00       3/3           bool std::operator==<std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*> const&, std::move_iterator<std::vector<double, std::allocator<double> >*> const&) [119]
+-----------------------------------------------
+                0.00    0.00       2/2           bool std::operator==<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >(std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&) [12]
+[121]    0.0    0.00    0.00       2         std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::begin() const [121]
+                0.00    0.00       2/3           __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >::__normal_iterator(std::vector<double, std::allocator<double> > const* const&) [99]
+-----------------------------------------------
+                0.00    0.00       1/1           bool std::operator==<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >(std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&) [12]
+[122]    0.0    0.00    0.00       1         std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::end() const [122]
+                0.00    0.00       1/3           __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >::__normal_iterator(std::vector<double, std::allocator<double> > const* const&) [99]
+-----------------------------------------------
+                0.00    0.00       1/1           bool std::__equal_aux<std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*>(std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*) [124]
+[123]    0.0    0.00    0.00       1         bool std::__equal<false>::equal<std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*>(std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*) [123]
+                0.00    0.00    1000/1000        bool std::operator==<double, std::allocator<double> >(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&) [81]
+-----------------------------------------------
+                0.00    0.00       1/1           bool std::equal<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > > >(__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >) [125]
+[124]    0.0    0.00    0.00       1         bool std::__equal_aux<std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*>(std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*) [124]
+                0.00    0.00       1/1           bool std::__equal<false>::equal<std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*>(std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*) [123]
+-----------------------------------------------
+                0.00    0.00       1/1           bool std::operator==<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >(std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&) [12]
+[125]    0.0    0.00    0.00       1         bool std::equal<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > > >(__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >) [125]
+                0.00    0.00       3/3           std::_Niter_base<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > > >(__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >) [113]
+                0.00    0.00       1/1           bool std::__equal_aux<std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*>(std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*) [124]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+   [7] id(unsigned int)       [87] void std::_Destroy_aux<false>::__destroy<std::vector<double, std::allocator<double> >*>(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*) [41] std::vector<double, std::allocator<double> >* std::__addressof<std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >&)
+  [95] __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::deallocate(std::vector<double, std::allocator<double> >*, unsigned long) [36] void std::_Destroy_aux<true>::__destroy<double*>(double*, double*) [124] bool std::__equal_aux<std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*>(std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*)
+  [96] __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::allocate(unsigned long, void const*) [104] std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_allocate(unsigned long) [79] bool std::__equal_aux<double const*, double const*>(double const*, double const*, double const*)
+  [97] __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::new_allocator() [105] std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_Vector_impl::_Vector_impl() [42] std::_Miter_base<std::move_iterator<double*> >::iterator_type std::__miter_base<std::move_iterator<double*> >(std::move_iterator<double*>)
+  [98] __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::~new_allocator() [106] std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_Vector_impl::~_Vector_impl() [113] std::_Niter_base<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > > >(__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >)
+  [47] __gnu_cxx::new_allocator<double>::deallocate(double*, unsigned long) [88] std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_deallocate(std::vector<double, std::allocator<double> >*, unsigned long) [67] std::_Niter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >)
+  [48] __gnu_cxx::new_allocator<double>::allocate(unsigned long, void const*) [82] std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_get_Tp_allocator() [30] std::_Niter_base<double*>::iterator_type std::__niter_base<double*>(double*)
+  [49] __gnu_cxx::new_allocator<double>::new_allocator() [107] std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_Vector_base() [68] double* std::__copy_move_a<true, double*, double*>(double*, double*, double*)
+  [50] __gnu_cxx::new_allocator<double>::~new_allocator() [108] std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::~_Vector_base() [69] double* std::__copy_move_a2<true, double*, double*>(double*, double*, double*)
+  [99] __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >::__normal_iterator(std::vector<double, std::allocator<double> > const* const&) [58] std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long) [114] std::vector<double, std::allocator<double> >* std::uninitialized_copy<std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*>, std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*)
+  [51] __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::__normal_iterator(double const* const&) [59] std::_Vector_base<double, std::allocator<double> >::_Vector_impl::_Vector_impl() [70] double* std::uninitialized_copy<std::move_iterator<double*>, double*>(std::move_iterator<double*>, std::move_iterator<double*>, double*)
+  [83] __gnu_cxx::new_allocator<std::vector<double, std::allocator<double> > >::max_size() const [60] std::_Vector_base<double, std::allocator<double> >::_Vector_impl::~_Vector_impl() [115] std::vector<double, std::allocator<double> >* std::__uninitialized_copy_a<std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> > >(std::move_iterator<std::vector<double, std::allocator<double> >*>, std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > >&)
+  [31] __gnu_cxx::new_allocator<double>::max_size() const [37] std::_Vector_base<double, std::allocator<double> >::_M_deallocate(double*, unsigned long) [71] double* std::__uninitialized_copy_a<std::move_iterator<double*>, double*, double>(std::move_iterator<double*>, std::move_iterator<double*>, double*, std::allocator<double>&)
+ [100] __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >::base() const [29] std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator() [116] void std::__uninitialized_default_n<std::vector<double, std::allocator<double> >*, unsigned long>(std::vector<double, std::allocator<double> >*, unsigned long)
+  [52] __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >::base() const [61] std::_Vector_base<double, std::allocator<double> >::_Vector_base() [18] void std::__uninitialized_default_n<double*, unsigned long>(double*, unsigned long)
+  [84] std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_get_Tp_allocator() const [62] std::_Vector_base<double, std::allocator<double> >::~_Vector_base() [117] void std::__uninitialized_default_n_a<std::vector<double, std::allocator<double> >*, unsigned long, std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >*, unsigned long, std::allocator<std::vector<double, std::allocator<double> > >&)
+  [32] std::_Vector_base<double, std::allocator<double> >::_M_get_Tp_allocator() const [89] std::move_iterator<std::vector<double, std::allocator<double> >*>::move_iterator(std::vector<double, std::allocator<double> >*) [19] void std::__uninitialized_default_n_a<double*, unsigned long, double>(double*, unsigned long, std::allocator<double>&)
+  [85] std::move_iterator<std::vector<double, std::allocator<double> >*>::base() const [38] std::move_iterator<double*>::move_iterator(double*) [92] std::move_iterator<std::vector<double, std::allocator<double> >*> std::__make_move_if_noexcept_iterator<std::vector<double, std::allocator<double> >*, std::move_iterator<std::vector<double, std::allocator<double> >*> >(std::vector<double, std::allocator<double> >*)
+  [33] std::move_iterator<double*>::base() const [90] std::enable_if<std::allocator_traits<std::allocator<std::vector<double, std::allocator<double> > > >::__maxsize_helper<std::allocator<std::vector<double, std::allocator<double> > > const>::value, unsigned long>::type std::allocator_traits<std::allocator<std::vector<double, std::allocator<double> > > >::_S_max_size<std::allocator<std::vector<double, std::allocator<double> > > const>(std::allocator<std::vector<double, std::allocator<double> > > const&) [43] std::move_iterator<double*> std::__make_move_if_noexcept_iterator<double*, std::move_iterator<double*> >(double*)
+  [13] std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_check_len(unsigned long, char const*) const [91] std::allocator_traits<std::allocator<std::vector<double, std::allocator<double> > > >::max_size(std::allocator<std::vector<double, std::allocator<double> > > const&) [118] std::vector<double, std::allocator<double> >* std::__uninitialized_move_if_noexcept_a<std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > > >(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > >&)
+ [122] std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::end() const [39] std::enable_if<std::allocator_traits<std::allocator<double> >::__maxsize_helper<std::allocator<double> const>::value, unsigned long>::type std::allocator_traits<std::allocator<double> >::_S_max_size<std::allocator<double> const>(std::allocator<double> const&) [72] double* std::__uninitialized_move_if_noexcept_a<double*, double*, std::allocator<double> >(double*, double*, double*, std::allocator<double>&)
+   [8] std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::size() const [40] std::allocator_traits<std::allocator<double> >::max_size(std::allocator<double> const&) [46] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+ [121] std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::begin() const [109] std::vector<double, std::allocator<double> >* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*>, std::move_iterator<std::vector<double, std::allocator<double> >*>, std::vector<double, std::allocator<double> >*) [73] double* std::copy<std::move_iterator<double*>, double*>(std::move_iterator<double*>, std::move_iterator<double*>, double*)
+  [86] std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::max_size() const [63] double* std::__uninitialized_copy<true>::__uninit_copy<std::move_iterator<double*>, double*>(std::move_iterator<double*>, std::move_iterator<double*>, double*) [125] bool std::equal<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > > >(__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, __gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >)
+   [3] std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::operator[](unsigned long) const [110] void std::__uninitialized_default_n_1<false>::__uninit_default_n<std::vector<double, std::allocator<double> >*, unsigned long>(std::vector<double, std::allocator<double> >*, unsigned long) [80] bool std::equal<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > > >(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, __gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >)
+  [53] std::vector<double, std::allocator<double> >::_M_check_len(unsigned long, char const*) const [15] void std::__uninitialized_default_n_1<true>::__uninit_default_n<double*, unsigned long>(double*, unsigned long) [20] double* std::fill_n<double*, unsigned long, double>(double*, unsigned long, double const&)
+  [77] std::vector<double, std::allocator<double> >::end() const [10] std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_default_append(unsigned long) [93] void std::_Destroy<std::vector<double, std::allocator<double> >*>(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*)
+  [27] std::vector<double, std::allocator<double> >::size() const [9] std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::resize(unsigned long) [94] void std::_Destroy<std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >*, std::vector<double, std::allocator<double> >*, std::allocator<std::vector<double, std::allocator<double> > >&)
+  [76] std::vector<double, std::allocator<double> >::begin() const [111] std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::vector() [44] void std::_Destroy<double*>(double*, double*)
+  [34] std::vector<double, std::allocator<double> >::max_size() const [112] std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::~vector() [45] void std::_Destroy<double*, double>(double*, double*, std::allocator<double>&)
+   [4] std::vector<double, std::allocator<double> >::operator[](unsigned long) const [5] std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::operator[](unsigned long) [74] void std::_Destroy<std::vector<double, std::allocator<double> > >(std::vector<double, std::allocator<double> >*)
+ [101] std::allocator<std::vector<double, std::allocator<double> > >::allocator() [16] std::vector<double, std::allocator<double> >::_M_default_append(unsigned long) [119] bool std::operator==<std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*> const&, std::move_iterator<std::vector<double, std::allocator<double> >*> const&)
+ [102] std::allocator<std::vector<double, std::allocator<double> > >::~allocator() [14] std::vector<double, std::allocator<double> >::resize(unsigned long) [12] bool std::operator==<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >(std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&)
+  [54] std::allocator<double>::allocator() [64] std::vector<double, std::allocator<double> >::vector() [81] bool std::operator==<double, std::allocator<double> >(std::vector<double, std::allocator<double> > const&, std::vector<double, std::allocator<double> > const&)
+  [55] std::allocator<double>::~allocator() [65] std::vector<double, std::allocator<double> >::~vector() [120] bool std::operator!=<std::vector<double, std::allocator<double> >*>(std::move_iterator<std::vector<double, std::allocator<double> >*> const&, std::move_iterator<std::vector<double, std::allocator<double> >*> const&)
+ [103] std::_Iter_base<__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >, true>::_S_base(__gnu_cxx::__normal_iterator<std::vector<double, std::allocator<double> > const*, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > >) [6] std::vector<double, std::allocator<double> >::operator[](unsigned long) [11] operator*(std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&, std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > > const&)
+  [56] std::_Iter_base<__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >, true>::_S_base(__gnu_cxx::__normal_iterator<double const*, std::vector<double, std::allocator<double> > >) [123] bool std::__equal<false>::equal<std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*>(std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> > const*) [75] operator new(unsigned long, void*)
+  [28] std::_Iter_base<double*, false>::_S_base(double*) [78] bool std::__equal<false>::equal<double const*, double const*>(double const*, double const*, double const*) [1] main
+  [35] std::_Iter_base<std::move_iterator<double*>, true>::_S_base(std::move_iterator<double*>) [66] void std::_Construct<std::vector<double, std::allocator<double> >>(std::vector<double, std::allocator<double> >*) (2) <cycle 1>
+  [57] double* std::__copy_move<true, true, std::random_access_iterator_tag>::__copy_m<double>(double const*, double const*, double*) [17] __gnu_cxx::__enable_if<std::__is_scalar<double>::__value, double*>::__type std::__fill_n_a<double*, unsigned long, double>(double*, unsigned long, double const&)

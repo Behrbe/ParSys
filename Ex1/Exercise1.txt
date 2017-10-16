@@ -1,0 +1,8 @@
+mmul.cpp -basic file provided for the course
+mmulparallel.cpp -file with a * function based on the parallel pragma. Was working, broke it, unable to fix
+mmulparallel_for.cpp -file using the parellel for pragma 
+mmulparallel_for.cpp -file using the parallel for slightly differnt, not the desired difference
+mmulseq.cpp -file trying to increase instruction level paralellism with an eye towards quadcore systems
+mmulseq2.cpp  -file trying to even further increase instruction level paralellism. difference negligible
+
+desired test sizes: 10 100 1000 5000 10000 ---5000 and 10000 testruns killed off after approximately 1 hour
