@@ -1,0 +1,46 @@
+BENCHMARKING OF mmul_diag_parallel
+PROBLEM SIZE 64: 
+Workload failed: No such file or directory
+=======================================
+PROBLEM SIZE 128: 
+Workload failed: No such file or directory
+=======================================
+PROBLEM SIZE 512: 
+Workload failed: No such file or directory
+=======================================
+PROBLEM SIZE 1024: 
+Workload failed: No such file or directory
+=======================================
+PROBLEM SIZE 2048: 
+Workload failed: No such file or directory
+PROBLEM SIZE 64: 
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed ?%CPU (0avgtext+0avgdata 1248maxresident)k
+0inputs+0outputs (0major+31minor)pagefaults 0swaps
+Workload failed: No such file or directory
+=======================================
+PROBLEM SIZE 128: 
+Workload failed: No such file or directory
+=======================================
+PROBLEM SIZE 512: 
+Workload failed: No such file or directory
+=======================================
+PROBLEM SIZE 1024: 
+Workload failed: No such file or directory
+=======================================
+PROBLEM SIZE 2048: 
+Workload failed: No such file or directory
+PROBLEM SIZE 64: 
+Workload failed: No such file or directory
+=======================================
+PROBLEM SIZE 128: 
+Workload failed: No such file or directory
+=======================================
+PROBLEM SIZE 512: 
+Workload failed: No such file or directory
+=======================================
+PROBLEM SIZE 1024: 
+Workload failed: No such file or directory
+=======================================
+PROBLEM SIZE 2048: 
+Workload failed: No such file or directory
