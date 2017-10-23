@@ -1,0 +1,386 @@
+bornie-easynote-ls11hr
+    description: Notebook
+    product: EasyNote LS11HR ()
+    vendor: Packard Bell
+    version: V1.17
+    serial: NXBYREG002205153EA1601
+    width: 64 bits
+    capabilities: smbios-2.7 dmi-2.7 vsyscall32
+    configuration: boot=normal chassis=notebook uuid=8D9E22CA-11C5-11E1-A5D5-DC0EA11E274A
+  *-core
+       description: Motherboard
+       product: SJV70_HR
+       vendor: Packard Bell
+       physical id: 0
+       version: Base Board Version
+       serial: Base Board Serial Number
+       slot: Base Board Chassis Location
+     *-firmware
+          description: BIOS
+          vendor: Packard Bell
+          physical id: 0
+          version: V1.17
+          date: 12/30/2011
+          size: 1MiB
+          capacity: 2496KiB
+          capabilities: pci upgrade shadowing cdboot bootselect edd int13floppynec int13floppytoshiba int13floppy360 int13floppy1200 int13floppy720 int13floppy2880 int9keyboard int10video acpi usb biosbootspecification uefi
+     *-memory
+          description: System Memory
+          physical id: 1b
+          slot: System board or motherboard
+          size: 6GiB
+        *-bank:0
+             description: SODIMM DDR3 Synchronous 1333 MHz (0,8 ns)
+             product: ACR512X64D3S13C9G
+             vendor: Kinston
+             physical id: 0
+             serial: E524A669
+             slot: ChannelA-DIMM0
+             size: 4GiB
+             width: 64 bits
+             clock: 1333MHz (0.8ns)
+        *-bank:1
+             description: DIMM [empty]
+             physical id: 1
+             slot: ChannelA-DIMM1
+        *-bank:2
+             description: SODIMM DDR3 Synchronous 1333 MHz (0,8 ns)
+             product: ACR256X64D3S13C9G
+             vendor: Kinston
+             physical id: 2
+             serial: DB0FC235
+             slot: ChannelB-DIMM0
+             size: 2GiB
+             width: 64 bits
+             clock: 1333MHz (0.8ns)
+        *-bank:3
+             description: DIMM [empty]
+             physical id: 3
+             slot: ChannelB-DIMM1
+     *-cpu
+          description: CPU
+          product: Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz
+          vendor: Intel Corp.
+          physical id: 2e
+          bus info: cpu@0
+          version: Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz
+          slot: CPU1
+          size: 2500MHz
+          capacity: 4GHz
+          width: 64 bits
+          clock: 1333MHz
+          capabilities: x86-64 fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid cpufreq
+          configuration: cores=2 enabledcores=2 threads=4
+        *-cache:0
+             description: L1 cache
+             physical id: 30
+             slot: L1 Cache
+             size: 32KiB
+             capacity: 32KiB
+             capabilities: synchronous internal write-through instruction
+        *-cache:1
+             description: L2 cache
+             physical id: 31
+             slot: L2 Cache
+             size: 256KiB
+             capacity: 256KiB
+             capabilities: synchronous internal write-through unified
+        *-cache:2
+             description: L3 cache
+             physical id: 32
+             slot: L3 Cache
+             size: 3MiB
+             capacity: 3MiB
+             capabilities: synchronous internal write-through unified
+     *-cache
+          description: L1 cache
+          physical id: 2f
+          slot: L1 Cache
+          size: 32KiB
+          capacity: 32KiB
+          capabilities: synchronous internal write-through data
+     *-pci
+          description: Host bridge
+          product: 2nd Generation Core Processor Family DRAM Controller
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 09
+          width: 32 bits
+          clock: 33MHz
+        *-display
+             description: VGA compatible controller
+             product: 2nd Generation Core Processor Family Integrated Graphics Controller
+             vendor: Intel Corporation
+             physical id: 2
+             bus info: pci@0000:00:02.0
+             version: 09
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msi pm vga_controller bus_master cap_list rom
+             configuration: driver=i915 latency=0
+             resources: irq:42 memory:c0000000-c03fffff memory:b0000000-bfffffff ioport:3000(size=64)
+        *-communication
+             description: Communication controller
+             product: 6 Series/C200 Series Chipset Family MEI Controller #1
+             vendor: Intel Corporation
+             physical id: 16
+             bus info: pci@0000:00:16.0
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi bus_master cap_list
+             configuration: driver=mei_me latency=0
+             resources: irq:41 memory:c0604000-c060400f
+        *-usb:0
+             description: USB controller
+             product: 6 Series/C200 Series Chipset Family USB Enhanced Host Controller #2
+             vendor: Intel Corporation
+             physical id: 1a
+             bus info: pci@0000:00:1a.0
+             version: 04
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=ehci-pci latency=0
+             resources: irq:16 memory:c060a000-c060a3ff
+        *-multimedia
+             description: Audio device
+             product: 6 Series/C200 Series Chipset Family High Definition Audio Controller
+             vendor: Intel Corporation
+             physical id: 1b
+             bus info: pci@0000:00:1b.0
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi pciexpress bus_master cap_list
+             configuration: driver=snd_hda_intel latency=0
+             resources: irq:43 memory:c0600000-c0603fff
+        *-pci:0
+             description: PCI bridge
+             product: 6 Series/C200 Series Chipset Family PCI Express Root Port 1
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: b4
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:17 ioport:2000(size=4096) memory:c0500000-c05fffff
+           *-network
+                description: Ethernet interface
+                product: AR8151 v2.0 Gigabit Ethernet
+                vendor: Qualcomm Atheros
+                physical id: 0
+                bus info: pci@0000:02:00.0
+                logical name: eth0
+                version: c0
+                serial: dc:0e:a1:1e:27:4a
+                capacity: 1Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress vpd bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=atl1c driverversion=1.0.1.1-NAPI latency=0 link=no multicast=yes port=twisted pair
+                resources: irq:44 memory:c0500000-c053ffff ioport:2000(size=128)
+        *-pci:1
+             description: PCI bridge
+             product: 6 Series/C200 Series Chipset Family PCI Express Root Port 2
+             vendor: Intel Corporation
+             physical id: 1c.1
+             bus info: pci@0000:00:1c.1
+             version: b4
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:16 memory:c0400000-c04fffff
+           *-network
+                description: Wireless interface
+                product: AR9287 Wireless Network Adapter (PCI-Express)
+                vendor: Qualcomm Atheros
+                physical id: 0
+                bus info: pci@0000:03:00.0
+                logical name: wlan0
+                version: 01
+                serial: 9c:b7:0d:16:8a:03
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list ethernet physical wireless
+                configuration: broadcast=yes driver=ath9k driverversion=3.13.0-67-generic firmware=N/A ip=192.168.1.12 latency=0 link=yes multicast=yes wireless=IEEE 802.11bgn
+                resources: irq:17 memory:c0400000-c040ffff
+        *-usb:1
+             description: USB controller
+             product: 6 Series/C200 Series Chipset Family USB Enhanced Host Controller #1
+             vendor: Intel Corporation
+             physical id: 1d
+             bus info: pci@0000:00:1d.0
+             version: 04
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=ehci-pci latency=0
+             resources: irq:23 memory:c0609000-c06093ff
+        *-isa
+             description: ISA bridge
+             product: HM65 Express Chipset Family LPC Controller
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 04
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master cap_list
+             configuration: driver=lpc_ich latency=0
+             resources: irq:0
+        *-storage
+             description: SATA controller
+             product: 6 Series/C200 Series Chipset Family 6 port SATA AHCI Controller
+             vendor: Intel Corporation
+             physical id: 1f.2
+             bus info: pci@0000:00:1f.2
+             version: 04
+             width: 32 bits
+             clock: 66MHz
+             capabilities: storage msi pm ahci_1.0 bus_master cap_list
+             configuration: driver=ahci latency=0
+             resources: irq:40 ioport:3088(size=8) ioport:309c(size=4) ioport:3080(size=8) ioport:3098(size=4) ioport:3060(size=32) memory:c0608000-c06087ff
+        *-serial UNCLAIMED
+             description: SMBus
+             product: 6 Series/C200 Series Chipset Family SMBus Controller
+             vendor: Intel Corporation
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             configuration: latency=0
+             resources: memory:c0606000-c06060ff ioport:3040(size=32)
+     *-scsi:0
+          physical id: 1
+          logical name: scsi0
+          capabilities: emulated
+        *-disk
+             description: ATA Disk
+             product: WDC WD5000BPVT-2
+             vendor: Western Digital
+             physical id: 0.0.0
+             bus info: scsi@0:0.0.0
+             logical name: /dev/sda
+             version: 01.0
+             serial: WD-WX71E91DFVF6
+             size: 465GiB (500GB)
+             capabilities: partitioned partitioned:dos
+             configuration: ansiversion=5 sectorsize=4096 signature=e78dbd80
+           *-volume:0
+                description: Windows NTFS volume
+                physical id: 1
+                bus info: scsi@0:0.0.0,1
+                logical name: /dev/sda1
+                version: 3.1
+                serial: dede-7f07
+                size: 18GiB
+                capacity: 19GiB
+                capabilities: primary ntfs initialized
+                configuration: clustersize=4096 created=2012-02-04 18:17:26 filesystem=ntfs label=PQSERVICE state=clean
+           *-volume:1
+                description: Windows NTFS volume
+                physical id: 2
+                bus info: scsi@0:0.0.0,2
+                logical name: /dev/sda2
+                version: 3.1
+                serial: 26de-e7ce
+                size: 98MiB
+                capacity: 100MiB
+                capabilities: primary bootable ntfs initialized
+                configuration: clustersize=4096 created=2012-02-04 18:17:28 filesystem=ntfs label=SYSTEM RESERVED state=clean
+           *-volume:2
+                description: Windows NTFS volume
+                physical id: 3
+                bus info: scsi@0:0.0.0,3
+                logical name: /dev/sda3
+                version: 3.1
+                serial: 6812308d-b2da-aa41-8c90-145b7510ced1
+                size: 366GiB
+                capacity: 366GiB
+                capabilities: primary ntfs initialized
+                configuration: clustersize=4096 created=2012-07-14 18:29:19 filesystem=ntfs label=Packard Bell modified_by_chkdsk=true mounted_on_nt4=true resize_log_file=true state=dirty upgrade_on_mount=true
+           *-volume:3
+                description: Extended partition
+                physical id: 4
+                bus info: scsi@0:0.0.0,4
+                logical name: /dev/sda4
+                size: 80GiB
+                capacity: 80GiB
+                capabilities: primary extended partitioned partitioned:extended
+              *-logicalvolume:0
+                   description: Linux filesystem partition
+                   physical id: 5
+                   logical name: /dev/sda5
+                   logical name: /
+                   capacity: 74GiB
+                   configuration: mount.fstype=ext4 mount.options=rw,relatime,errors=remount-ro,data=ordered state=mounted
+              *-logicalvolume:1
+                   description: Linux swap / Solaris partition
+                   physical id: 6
+                   logical name: /dev/sda6
+                   capacity: 5994MiB
+                   capabilities: nofs
+     *-scsi:1
+          physical id: 2
+          logical name: scsi1
+          capabilities: emulated
+        *-disk
+             description: ATA Disk
+             product: WDC WD5000BPVT-2
+             vendor: Western Digital
+             physical id: 0.0.0
+             bus info: scsi@1:0.0.0
+             logical name: /dev/sdb
+             version: 01.0
+             serial: WD-WX71E91DFTC7
+             size: 465GiB (500GB)
+             capabilities: partitioned partitioned:dos
+             configuration: ansiversion=5 sectorsize=4096 signature=e78dbdb6
+           *-volume
+                description: Windows NTFS volume
+                physical id: 1
+                bus info: scsi@1:0.0.0,1
+                logical name: /dev/sdb1
+                version: 3.1
+                serial: ba02c4b3-9702-9149-bd08-adc50cd94b76
+                size: 465GiB
+                capacity: 465GiB
+                capabilities: primary ntfs initialized
+                configuration: clustersize=4096 created=2012-02-04 18:17:31 filesystem=ntfs label=DATA state=clean
+     *-scsi:2
+          physical id: 3
+          logical name: scsi2
+          capabilities: emulated
+        *-cdrom
+             description: DVD-RAM writer
+             product: DVD-RAM UJ8B0AW
+             vendor: MATSHITA
+             physical id: 0.0.0
+             bus info: scsi@2:0.0.0
+             logical name: /dev/cdrom
+             logical name: /dev/sr0
+             version: 1.00
+             capabilities: removable audio cd-r cd-rw dvd dvd-r dvd-ram
+             configuration: ansiversion=5 status=nodisc
+  *-power UNCLAIMED
+       description: OEM_Define1
+       product: OEM_Define5
+       vendor: OEM_Define2
+       physical id: 1
+       version: OEM_Define6
+       serial: OEM_Define3
+       capacity: 75mWh
+  *-battery
+       description: Lithium Ion Battery
+       product: CRB Battery 0
+       vendor: -Virtual Battery 0-
+       physical id: 2
+       version: 10/12/2007
+       serial: Battery 0
+       slot: Fake
