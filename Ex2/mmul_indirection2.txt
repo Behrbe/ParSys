@@ -1,0 +1,350 @@
+BENCHMARKING OF mmul_indirection
+PROBLEM SIZE 64: 
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for 'system wide':
+
+         18,489234      task-clock (msec)         #    4,693 CPUs utilized            (99,96%)
+                22      context-switches          #    0,001 M/sec                    (99,98%)
+                 2      cpu-migrations            #    0,108 K/sec                    (99,99%)
+               143      page-faults               #    0,008 M/sec                  
+         7.181.515      cycles                    #    0,388 GHz                      (89,00%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (99,88%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (99,92%)
+         2.046.821      instructions              #    0,29  insns per cycle          (34,64%)
+     <not counted>      branches                   (0,00%)
+     <not counted>      branch-misses              (0,00%)
+
+       0,003939660 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 128: 
+Timer - Multiplication: 4 ms 
+Ret: 0
+
+ Performance counter stats for 'system wide':
+
+         35,061378      task-clock (msec)         #    4,336 CPUs utilized            (99,98%)
+                59      context-switches          #    0,002 M/sec                    (99,99%)
+                 9      cpu-migrations            #    0,257 K/sec                    (99,99%)
+               215      page-faults               #    0,006 M/sec                  
+        16.159.174      cycles                    #    0,461 GHz                      (10,09%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (51,17%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (83,36%)
+        22.654.295      instructions              #    1,40  insns per cycle          (93,29%)
+         2.548.130      branches                  #   72,676 M/sec                    (55,59%)
+            86.315      branch-misses             #    3,39% of all branches          (25,75%)
+
+       0,008086559 seconds time elapsed
+
+==5405== Memcheck, a memory error detector
+==5405== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==5405== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==5405== Command: ./mmul_indirection 128
+==5405== 
+Timer - Multiplication: 105 ms 
+Ret: 0
+==5405== 
+==5405== HEAP SUMMARY:
+==5405==     in use at exit: 0 bytes in 0 blocks
+==5405==   total heap usage: 7 allocs, 7 frees, 396,327 bytes allocated
+==5405== 
+==5405== All heap blocks were freed -- no leaks are possible
+==5405== 
+==5405== For counts of detected and suppressed errors, rerun with: -v
+==5405== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=======================================
+PROBLEM SIZE 512: 
+Timer - Multiplication: 281 ms 
+Ret: 0
+
+ Performance counter stats for 'system wide':
+
+       1169,860280      task-clock (msec)         #    4,008 CPUs utilized            (100,00%)
+               637      context-switches          #    0,545 K/sec                    (100,00%)
+                35      cpu-migrations            #    0,030 K/sec                    (100,00%)
+             1.669      page-faults               #    0,001 M/sec                  
+       787.349.214      cycles                    #    0,673 GHz                      (50,55%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,86%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (51,03%)
+       975.108.898      instructions              #    1,24  insns per cycle          (49,78%)
+        75.298.061      branches                  #   64,365 M/sec                    (48,97%)
+           947.241      branch-misses             #    1,26% of all branches          (48,85%)
+
+       0,291848601 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 1024: 
+Timer - Multiplication: 2577 ms 
+Ret: 0
+
+ Performance counter stats for 'system wide':
+
+      10422,736047      task-clock (msec)         #    4,001 CPUs utilized            (100,00%)
+            10.094      context-switches          #    0,968 K/sec                    (100,00%)
+               873      cpu-migrations            #    0,084 K/sec                    (100,00%)
+             6.169      page-faults               #    0,592 K/sec                  
+     9.684.606.751      cycles                    #    0,929 GHz                      (49,80%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (49,88%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,02%)
+     8.713.665.181      instructions              #    0,90  insns per cycle          (50,15%)
+       783.363.441      branches                  #   75,159 M/sec                    (50,15%)
+        18.317.852      branch-misses             #    2,34% of all branches          (50,01%)
+
+       2,604775547 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 2048: 
+Timer - Multiplication: 20507 ms 
+Ret: 0
+
+ Performance counter stats for 'system wide':
+
+      82489,170804      task-clock (msec)         #    4,000 CPUs utilized            (100,00%)
+            76.103      context-switches          #    0,923 K/sec                    (100,00%)
+             5.666      cpu-migrations            #    0,069 K/sec                    (100,00%)
+            29.354      page-faults               #    0,356 K/sec                  
+    72.865.997.423      cycles                    #    0,883 GHz                      (50,00%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,01%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,03%)
+    67.105.677.499      instructions              #    0,92  insns per cycle          (50,00%)
+     5.744.947.214      branches                  #   69,645 M/sec                    (50,00%)
+       119.719.373      branch-misses             #    2,08% of all branches          (49,97%)
+
+      20,620141562 seconds time elapsed
+
+PROBLEM SIZE 64: 
+Timer - Multiplication: 0 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 2852maxresident)k
+0inputs+0outputs (0major+144minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for 'system wide':
+
+         14,625104      task-clock (msec)         #    4,716 CPUs utilized            (99,95%)
+                28      context-switches          #    0,002 M/sec                    (99,97%)
+                 4      cpu-migrations            #    0,274 K/sec                    (99,98%)
+               143      page-faults               #    0,010 M/sec                  
+        21.424.548      cycles                    #    1,465 GHz                      (94,99%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (99,86%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (99,91%)
+         4.441.089      instructions              #    0,21  insns per cycle          (34,86%)
+     <not counted>      branches                   (0,00%)
+     <not counted>      branch-misses              (0,00%)
+
+       0,003100911 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 128: 
+Timer - Multiplication: 4 ms 
+Ret: 0
+
+ Performance counter stats for 'system wide':
+
+         33,274107      task-clock (msec)         #    4,319 CPUs utilized            (99,98%)
+                21      context-switches          #    0,631 K/sec                    (99,99%)
+                 2      cpu-migrations            #    0,060 K/sec                    (99,99%)
+               216      page-faults               #    0,006 M/sec                  
+        31.062.202      cycles                    #    0,934 GHz                      (9,12%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (52,07%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (87,98%)
+        20.964.536      instructions              #    0,67  insns per cycle          (93,98%)
+         2.057.193      branches                  #   61,826 M/sec                    (53,69%)
+           108.267      branch-misses             #    5,26% of all branches          (19,66%)
+
+       0,007703250 seconds time elapsed
+
+==5507== Memcheck, a memory error detector
+==5507== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==5507== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==5507== Command: ./mmul_indirection 128
+==5507== 
+Timer - Multiplication: 104 ms 
+Ret: 0
+==5507== 
+==5507== HEAP SUMMARY:
+==5507==     in use at exit: 0 bytes in 0 blocks
+==5507==   total heap usage: 7 allocs, 7 frees, 396,327 bytes allocated
+==5507== 
+==5507== All heap blocks were freed -- no leaks are possible
+==5507== 
+==5507== For counts of detected and suppressed errors, rerun with: -v
+==5507== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=======================================
+PROBLEM SIZE 512: 
+Timer - Multiplication: 282 ms 
+Ret: 0
+
+ Performance counter stats for 'system wide':
+
+       1178,849113      task-clock (msec)         #    4,010 CPUs utilized            (100,00%)
+               638      context-switches          #    0,541 K/sec                    (100,00%)
+                53      cpu-migrations            #    0,045 K/sec                    (100,00%)
+             1.675      page-faults               #    0,001 M/sec                  
+       803.832.215      cycles                    #    0,682 GHz                      (49,91%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (51,16%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (51,36%)
+       962.211.508      instructions              #    1,20  insns per cycle          (50,38%)
+        76.727.739      branches                  #   65,087 M/sec                    (49,03%)
+         1.003.541      branch-misses             #    1,31% of all branches          (48,49%)
+
+       0,293992905 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 1024: 
+Timer - Multiplication: 2363 ms 
+Ret: 0
+
+ Performance counter stats for 'system wide':
+
+       9566,652701      task-clock (msec)         #    4,001 CPUs utilized            (100,00%)
+             4.856      context-switches          #    0,508 K/sec                    (100,00%)
+               373      cpu-migrations            #    0,039 K/sec                    (100,00%)
+             1.939      page-faults               #    0,203 K/sec                  
+     6.392.085.416      cycles                    #    0,668 GHz                      (49,82%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (49,90%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,05%)
+     7.771.134.718      instructions              #    1,22  insns per cycle          (50,15%)
+       591.942.615      branches                  #   61,876 M/sec                    (50,12%)
+         6.165.053      branch-misses             #    1,04% of all branches          (49,97%)
+
+       2,390869542 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 2048: 
+Timer - Multiplication: 19860 ms 
+Ret: 0
+
+ Performance counter stats for 'system wide':
+
+      79775,299348      task-clock (msec)         #    4,000 CPUs utilized            (100,00%)
+            65.060      context-switches          #    0,816 K/sec                    (100,00%)
+             4.892      cpu-migrations            #    0,061 K/sec                    (100,00%)
+            14.042      page-faults               #    0,176 K/sec                  
+    65.720.568.831      cycles                    #    0,824 GHz                      (49,99%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,00%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (49,99%)
+    65.374.872.643      instructions              #    0,99  insns per cycle          (50,01%)
+     5.383.541.654      branches                  #   67,484 M/sec                    (50,00%)
+        91.861.059      branch-misses             #    1,71% of all branches          (50,00%)
+
+      19,941735573 seconds time elapsed
+
+PROBLEM SIZE 64: 
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for 'system wide':
+
+         15,179247      task-clock (msec)         #    4,870 CPUs utilized            (99,95%)
+                21      context-switches          #    0,001 M/sec                    (99,97%)
+                 5      cpu-migrations            #    0,329 K/sec                    (99,99%)
+               141      page-faults               #    0,009 M/sec                  
+        14.212.662      cycles                    #    0,936 GHz                      (99,79%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (99,85%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (99,90%)
+         2.620.405      instructions              #    0,18  insns per cycle          (33,51%)
+     <not counted>      branches                   (0,00%)
+     <not counted>      branch-misses              (0,00%)
+
+       0,003116677 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 128: 
+Timer - Multiplication: 5 ms 
+Ret: 0
+
+ Performance counter stats for 'system wide':
+
+         37,799003      task-clock (msec)         #    4,395 CPUs utilized            (99,98%)
+                31      context-switches          #    0,820 K/sec                    (99,99%)
+                 4      cpu-migrations            #    0,106 K/sec                    (99,99%)
+               216      page-faults               #    0,006 M/sec                  
+        16.899.184      cycles                    #    0,447 GHz                      (40,09%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (76,94%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (99,95%)
+        21.054.921      instructions              #    1,25  insns per cycle          (67,28%)
+         1.240.590      branches                  #   32,821 M/sec                    (31,09%)
+           111.712      branch-misses             #    9,00% of all branches          (2,81%)
+
+       0,008601383 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 512: 
+Timer - Multiplication: 281 ms 
+Ret: 0
+
+ Performance counter stats for 'system wide':
+
+       1170,531375      task-clock (msec)         #    4,009 CPUs utilized            (100,00%)
+             1.050      context-switches          #    0,897 K/sec                    (100,00%)
+                80      cpu-migrations            #    0,068 K/sec                    (100,00%)
+             1.778      page-faults               #    0,002 M/sec                  
+       809.856.814      cycles                    #    0,692 GHz                      (50,02%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,91%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (51,04%)
+       994.732.740      instructions              #    1,23  insns per cycle          (50,34%)
+        81.609.074      branches                  #   69,720 M/sec                    (49,00%)
+         1.115.864      branch-misses             #    1,37% of all branches          (49,14%)
+
+       0,291970941 seconds time elapsed
+
+==5586== Memcheck, a memory error detector
+==5586== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==5586== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==5586== Command: ./mmul_indirection 512
+==5586== 
+Timer - Multiplication: 6200 ms 
+Ret: 0
+==5586== 
+==5586== HEAP SUMMARY:
+==5586==     in use at exit: 0 bytes in 0 blocks
+==5586==   total heap usage: 7 allocs, 7 frees, 6,303,783 bytes allocated
+==5586== 
+==5586== All heap blocks were freed -- no leaks are possible
+==5586== 
+==5586== For counts of detected and suppressed errors, rerun with: -v
+==5586== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=======================================
+PROBLEM SIZE 1024: 
+Timer - Multiplication: 2389 ms 
+Ret: 0
+
+ Performance counter stats for 'system wide':
+
+       9664,422346      task-clock (msec)         #    4,001 CPUs utilized            (100,00%)
+             5.817      context-switches          #    0,602 K/sec                    (100,00%)
+               455      cpu-migrations            #    0,047 K/sec                    (100,00%)
+             2.516      page-faults               #    0,260 K/sec                  
+     6.853.666.449      cycles                    #    0,709 GHz                      (49,83%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (49,85%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,00%)
+     7.831.466.643      instructions              #    1,14  insns per cycle          (50,14%)
+       611.017.923      branches                  #   63,223 M/sec                    (50,13%)
+         7.422.115      branch-misses             #    1,21% of all branches          (50,04%)
+
+       2,415241099 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 2048: 
+Timer - Multiplication: 19566 ms 
+Ret: 0
+
+ Performance counter stats for 'system wide':
+
+      78599,571591      task-clock (msec)         #    4,000 CPUs utilized            (100,00%)
+            56.236      context-switches          #    0,715 K/sec                    (100,00%)
+             4.459      cpu-migrations            #    0,057 K/sec                    (100,00%)
+            12.301      page-faults               #    0,157 K/sec                  
+    61.005.819.777      cycles                    #    0,776 GHz                      (49,98%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (49,98%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,00%)
+    64.547.954.288      instructions              #    1,06  insns per cycle          (50,02%)
+     5.252.149.477      branches                  #   66,822 M/sec                    (50,02%)
+        76.736.001      branch-misses             #    1,46% of all branches          (50,00%)
+
+      19,647844600 seconds time elapsed
+

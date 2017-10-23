@@ -1,0 +1,350 @@
+BENCHMARKING OF mmul_multiplication
+PROBLEM SIZE 64: 
+Timer - Multiplication: 1 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_multiplication 64':
+
+          3,460594      task-clock (msec)         #    0,850 CPUs utilized          
+                 1      context-switches          #    0,289 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               124      page-faults               #    0,036 M/sec                  
+         2.813.821      cycles                    #    0,813 GHz                    
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle   
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle   
+         6.807.855      instructions              #    2,42  insns per cycle          (46,82%)
+     <not counted>      branches                   (0,00%)
+     <not counted>      branch-misses              (0,00%)
+
+       0,004069525 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 128: 
+Timer - Multiplication: 7 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_multiplication 128':
+
+         10,100205      task-clock (msec)         #    0,946 CPUs utilized          
+                 1      context-switches          #    0,099 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               199      page-faults               #    0,020 M/sec                  
+         4.971.371      cycles                    #    0,492 GHz                    
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle   
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle   
+        29.869.826      instructions              #    6,01  insns per cycle          (63,66%)
+         3.692.969      branches                  #  365,633 M/sec                    (24,21%)
+     <not counted>      branch-misses              (0,00%)
+
+       0,010682192 seconds time elapsed
+
+==930== Memcheck, a memory error detector
+==930== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==930== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==930== Command: ./mmul_multiplication 128
+==930== 
+Timer - Multiplication: 139 ms 
+Ret: 0
+==930== 
+==930== HEAP SUMMARY:
+==930==     in use at exit: 0 bytes in 0 blocks
+==930==   total heap usage: 4 allocs, 4 frees, 393,255 bytes allocated
+==930== 
+==930== All heap blocks were freed -- no leaks are possible
+==930== 
+==930== For counts of detected and suppressed errors, rerun with: -v
+==930== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=======================================
+PROBLEM SIZE 512: 
+Timer - Multiplication: 360 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_multiplication 512':
+
+        371,336490      task-clock (msec)         #    0,997 CPUs utilized          
+                33      context-switches          #    0,089 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+             1.641      page-faults               #    0,004 M/sec                  
+       786.286.233      cycles                    #    2,117 GHz                      (50,04%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,58%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (51,11%)
+     1.330.309.039      instructions              #    1,69  insns per cycle          (51,55%)
+       138.455.941      branches                  #  372,858 M/sec                    (50,48%)
+           322.871      branch-misses             #    0,23% of all branches          (49,41%)
+
+       0,372615145 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 1024: 
+Timer - Multiplication: 3018 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_multiplication 1024':
+
+       3039,495367      task-clock (msec)         #    0,998 CPUs utilized          
+               257      context-switches          #    0,085 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+             1.649      page-faults               #    0,543 K/sec                  
+     6.645.767.961      cycles                    #    2,186 GHz                      (49,95%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (49,95%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,15%)
+    10.764.489.476      instructions              #    1,62  insns per cycle          (50,18%)
+     1.083.579.976      branches                  #  356,500 M/sec                    (50,11%)
+         1.448.623      branch-misses             #    0,13% of all branches          (50,05%)
+
+       3,045670927 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 2048: 
+Timer - Multiplication: 24382 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_multiplication 2048':
+
+      24418,058632      task-clock (msec)         #    0,998 CPUs utilized          
+             2.068      context-switches          #    0,085 K/sec                  
+                 2      cpu-migrations            #    0,000 K/sec                  
+            10.373      page-faults               #    0,425 K/sec                  
+    53.385.807.544      cycles                    #    2,186 GHz                      (50,01%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,01%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,01%)
+    86.168.987.776      instructions              #    1,61  insns per cycle          (50,00%)
+     8.639.193.435      branches                  #  353,803 M/sec                    (50,01%)
+         7.164.897      branch-misses             #    0,08% of all branches          (50,00%)
+
+      24,466764516 seconds time elapsed
+
+PROBLEM SIZE 64: 
+Timer - Multiplication: 1 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 2772maxresident)k
+0inputs+0outputs (0major+144minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_multiplication 64':
+
+          3,107719      task-clock (msec)         #    0,845 CPUs utilized          
+                 0      context-switches          #    0,000 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               124      page-faults               #    0,040 M/sec                  
+         4.947.703      cycles                    #    1,592 GHz                    
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle   
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle   
+     <not counted>      instructions               (0,00%)
+     <not counted>      branches                   (0,00%)
+     <not counted>      branch-misses              (0,00%)
+
+       0,003679788 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 128: 
+Timer - Multiplication: 7 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_multiplication 128':
+
+         10,151623      task-clock (msec)         #    0,952 CPUs utilized          
+                 1      context-switches          #    0,099 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               200      page-faults               #    0,020 M/sec                  
+           108.205      cycles                    #    0,011 GHz                    
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle   
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle   
+        24.266.225      instructions              #   224,26  insns per cycle          (99,20%)
+         2.911.267      branches                  #  286,778 M/sec                    (59,79%)
+            32.972      branch-misses             #    1,13% of all branches          (20,69%)
+
+       0,010660642 seconds time elapsed
+
+==1066== Memcheck, a memory error detector
+==1066== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==1066== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==1066== Command: ./mmul_multiplication 128
+==1066== 
+Timer - Multiplication: 136 ms 
+Ret: 0
+==1066== 
+==1066== HEAP SUMMARY:
+==1066==     in use at exit: 0 bytes in 0 blocks
+==1066==   total heap usage: 4 allocs, 4 frees, 393,255 bytes allocated
+==1066== 
+==1066== All heap blocks were freed -- no leaks are possible
+==1066== 
+==1066== For counts of detected and suppressed errors, rerun with: -v
+==1066== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=======================================
+PROBLEM SIZE 512: 
+Timer - Multiplication: 361 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_multiplication 512':
+
+        371,694128      task-clock (msec)         #    0,997 CPUs utilized          
+                31      context-switches          #    0,083 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+             1.640      page-faults               #    0,004 M/sec                  
+       787.274.599      cycles                    #    2,118 GHz                      (50,13%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,70%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (51,24%)
+     1.333.170.403      instructions              #    1,69  insns per cycle          (51,39%)
+       137.999.320      branches                  #  371,271 M/sec                    (50,29%)
+           319.686      branch-misses             #    0,23% of all branches          (49,22%)
+
+       0,372772957 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 1024: 
+Timer - Multiplication: 3022 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_multiplication 1024':
+
+       3040,026405      task-clock (msec)         #    0,998 CPUs utilized          
+               259      context-switches          #    0,085 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+             1.649      page-faults               #    0,542 K/sec                  
+     6.643.903.686      cycles                    #    2,185 GHz                      (49,96%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (49,96%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,17%)
+    10.768.344.586      instructions              #    1,62  insns per cycle          (50,16%)
+     1.087.083.876      branches                  #  357,590 M/sec                    (50,09%)
+         1.448.635      branch-misses             #    0,13% of all branches          (50,02%)
+
+       3,046177293 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 2048: 
+Timer - Multiplication: 24369 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_multiplication 2048':
+
+      24408,236694      task-clock (msec)         #    0,998 CPUs utilized          
+             2.064      context-switches          #    0,085 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+            10.373      page-faults               #    0,425 K/sec                  
+    53.383.868.747      cycles                    #    2,187 GHz                      (49,98%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (49,98%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,03%)
+    86.129.240.704      instructions              #    1,61  insns per cycle          (50,03%)
+     8.643.928.299      branches                  #  354,140 M/sec                    (50,02%)
+         7.175.366      branch-misses             #    0,08% of all branches          (49,99%)
+
+      24,455048374 seconds time elapsed
+
+PROBLEM SIZE 64: 
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_multiplication 64':
+
+          2,755910      task-clock (msec)         #    0,855 CPUs utilized          
+                 1      context-switches          #    0,363 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               124      page-faults               #    0,045 M/sec                  
+         2.278.558      cycles                    #    0,827 GHz                    
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle   
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle   
+         6.237.218      instructions              #    2,74  insns per cycle          (58,14%)
+     <not counted>      branches                   (0,00%)
+     <not counted>      branch-misses              (0,00%)
+
+       0,003223625 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 128: 
+Timer - Multiplication: 6 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_multiplication 128':
+
+          9,303099      task-clock (msec)         #    0,945 CPUs utilized          
+                 1      context-switches          #    0,107 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               198      page-faults               #    0,021 M/sec                  
+         5.302.145      cycles                    #    0,570 GHz                    
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle   
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle   
+        28.843.959      instructions              #    5,44  insns per cycle          (64,16%)
+         3.542.940      branches                  #  380,834 M/sec                    (21,38%)
+     <not counted>      branch-misses              (0,00%)
+
+       0,009845956 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 512: 
+Timer - Multiplication: 363 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_multiplication 512':
+
+        372,923119      task-clock (msec)         #    0,997 CPUs utilized          
+                31      context-switches          #    0,083 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+             1.639      page-faults               #    0,004 M/sec                  
+       809.989.144      cycles                    #    2,172 GHz                      (48,61%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,65%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (51,16%)
+     1.337.951.970      instructions              #    1,65  insns per cycle          (51,52%)
+       137.352.751      branches                  #  368,314 M/sec                    (50,56%)
+           313.074      branch-misses             #    0,23% of all branches          (49,52%)
+
+       0,374080284 seconds time elapsed
+
+==1170== Memcheck, a memory error detector
+==1170== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==1170== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==1170== Command: ./mmul_multiplication 512
+==1170== 
+Timer - Multiplication: 8640 ms 
+Ret: 0
+==1170== 
+==1170== HEAP SUMMARY:
+==1170==     in use at exit: 0 bytes in 0 blocks
+==1170==   total heap usage: 4 allocs, 4 frees, 6,291,495 bytes allocated
+==1170== 
+==1170== All heap blocks were freed -- no leaks are possible
+==1170== 
+==1170== For counts of detected and suppressed errors, rerun with: -v
+==1170== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=======================================
+PROBLEM SIZE 1024: 
+Timer - Multiplication: 3032 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_multiplication 1024':
+
+       3053,052662      task-clock (msec)         #    0,998 CPUs utilized          
+               259      context-switches          #    0,085 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+             1.649      page-faults               #    0,540 K/sec                  
+     6.653.571.670      cycles                    #    2,179 GHz                      (50,06%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,12%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,18%)
+    10.795.694.542      instructions              #    1,62  insns per cycle          (50,06%)
+     1.087.887.422      branches                  #  356,328 M/sec                    (49,94%)
+         1.482.914      branch-misses             #    0,14% of all branches          (50,01%)
+
+       3,059169286 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 2048: 
+Timer - Multiplication: 24426 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_multiplication 2048':
+
+      24464,164595      task-clock (msec)         #    0,998 CPUs utilized          
+             2.089      context-switches          #    0,085 K/sec                  
+                 2      cpu-migrations            #    0,000 K/sec                  
+            11.394      page-faults               #    0,466 K/sec                  
+    53.491.751.161      cycles                    #    2,187 GHz                      (50,00%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,01%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,01%)
+    86.199.789.028      instructions              #    1,61  insns per cycle          (50,01%)
+     8.646.713.124      branches                  #  353,444 M/sec                    (49,99%)
+         7.220.902      branch-misses             #    0,08% of all branches          (50,01%)
+
+      24,513866583 seconds time elapsed
+

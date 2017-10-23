@@ -1,0 +1,350 @@
+BENCHMARKING OF mmul_nested
+PROBLEM SIZE 64: 
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nested 64':
+
+          2,713018      task-clock (msec)         #    0,813 CPUs utilized          
+                 1      context-switches          #    0,369 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               127      page-faults               #    0,047 M/sec                  
+            86.842      cycles                    #    0,032 GHz                    
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle   
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle   
+         4.424.795      instructions              #   50,95  insns per cycle          (97,44%)
+     <not counted>      branches                   (0,00%)
+     <not counted>      branch-misses              (0,00%)
+
+       0,003335431 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 128: 
+Timer - Multiplication: 4 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nested 128':
+
+          7,413943      task-clock (msec)         #    0,934 CPUs utilized          
+                 1      context-switches          #    0,135 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               200      page-faults               #    0,027 M/sec                  
+         2.485.894      cycles                    #    0,335 GHz                    
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle   
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle   
+        21.035.655      instructions              #    8,46  insns per cycle          (78,81%)
+         1.949.832      branches                  #  262,995 M/sec                    (25,41%)
+     <not counted>      branch-misses              (0,00%)
+
+       0,007933815 seconds time elapsed
+
+==1440== Memcheck, a memory error detector
+==1440== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==1440== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==1440== Command: ./mmul_nested 128
+==1440== 
+Timer - Multiplication: 107 ms 
+Ret: 0
+==1440== 
+==1440== HEAP SUMMARY:
+==1440==     in use at exit: 0 bytes in 0 blocks
+==1440==   total heap usage: 388 allocs, 388 frees, 402,471 bytes allocated
+==1440== 
+==1440== All heap blocks were freed -- no leaks are possible
+==1440== 
+==1440== For counts of detected and suppressed errors, rerun with: -v
+==1440== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=======================================
+PROBLEM SIZE 512: 
+Timer - Multiplication: 276 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nested 512':
+
+        288,270436      task-clock (msec)         #    0,996 CPUs utilized          
+                25      context-switches          #    0,087 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+             1.652      page-faults               #    0,006 M/sec                  
+       626.469.421      cycles                    #    2,173 GHz                      (50,15%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,14%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,16%)
+       907.301.927      instructions              #    1,45  insns per cycle          (51,83%)
+        70.004.545      branches                  #  242,843 M/sec                    (51,11%)
+           304.382      branch-misses             #    0,43% of all branches          (50,38%)
+
+       0,289343782 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 1024: 
+Timer - Multiplication: 2382 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nested 1024':
+
+       2409,192155      task-clock (msec)         #    0,998 CPUs utilized          
+               204      context-switches          #    0,085 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+             6.274      page-faults               #    0,003 M/sec                  
+     5.238.298.445      cycles                    #    2,174 GHz                      (50,06%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,14%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,22%)
+     7.582.372.555      instructions              #    1,45  insns per cycle          (50,17%)
+       558.186.673      branches                  #  231,690 M/sec                    (50,01%)
+         1.389.309      branch-misses             #    0,25% of all branches          (49,84%)
+
+       2,414297735 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 2048: 
+Timer - Multiplication: 19314 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nested 2048':
+
+      19387,543217      task-clock (msec)         #    0,998 CPUs utilized          
+             1.635      context-switches          #    0,084 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+            24.738      page-faults               #    0,001 M/sec                  
+    42.370.666.290      cycles                    #    2,185 GHz                      (49,99%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,02%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,03%)
+    60.477.537.862      instructions              #    1,43  insns per cycle          (50,03%)
+     4.380.866.568      branches                  #  225,963 M/sec                    (49,99%)
+         6.664.640      branch-misses             #    0,15% of all branches          (49,97%)
+
+      19,425648050 seconds time elapsed
+
+PROBLEM SIZE 64: 
+Timer - Multiplication: 1 ms 
+Ret: 0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 2808maxresident)k
+0inputs+0outputs (0major+142minor)pagefaults 0swaps
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nested 64':
+
+          3,400323      task-clock (msec)         #    0,872 CPUs utilized          
+                 0      context-switches          #    0,000 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               125      page-faults               #    0,037 M/sec                  
+           849.378      cycles                    #    0,250 GHz                    
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle   
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle   
+         4.991.335      instructions              #    5,88  insns per cycle          (80,57%)
+     <not counted>      branches                   (0,00%)
+     <not counted>      branch-misses              (0,00%)
+
+       0,003899808 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 128: 
+Timer - Multiplication: 6 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nested 128':
+
+          8,983928      task-clock (msec)         #    0,946 CPUs utilized          
+                 0      context-switches          #    0,000 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               201      page-faults               #    0,022 M/sec                  
+         1.606.754      cycles                    #    0,179 GHz                    
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle   
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle   
+        19.925.925      instructions              #   12,40  insns per cycle          (86,91%)
+         1.816.222      branches                  #  202,163 M/sec                    (42,63%)
+     <not counted>      branch-misses              (0,00%)
+
+       0,009500858 seconds time elapsed
+
+==1527== Memcheck, a memory error detector
+==1527== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==1527== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==1527== Command: ./mmul_nested 128
+==1527== 
+Timer - Multiplication: 106 ms 
+Ret: 0
+==1527== 
+==1527== HEAP SUMMARY:
+==1527==     in use at exit: 0 bytes in 0 blocks
+==1527==   total heap usage: 388 allocs, 388 frees, 402,471 bytes allocated
+==1527== 
+==1527== All heap blocks were freed -- no leaks are possible
+==1527== 
+==1527== For counts of detected and suppressed errors, rerun with: -v
+==1527== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=======================================
+PROBLEM SIZE 512: 
+Timer - Multiplication: 279 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nested 512':
+
+        289,012021      task-clock (msec)         #    0,996 CPUs utilized          
+                25      context-switches          #    0,087 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+             1.652      page-faults               #    0,006 M/sec                  
+       630.152.108      cycles                    #    2,180 GHz                      (50,26%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,28%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,27%)
+       955.538.221      instructions              #    1,52  insns per cycle          (49,75%)
+        69.802.899      branches                  #  241,522 M/sec                    (51,15%)
+           298.970      branch-misses             #    0,43% of all branches          (50,44%)
+
+       0,290031940 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 1024: 
+Timer - Multiplication: 2472 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nested 1024':
+
+       2499,011385      task-clock (msec)         #    0,998 CPUs utilized          
+               215      context-switches          #    0,086 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+             6.274      page-faults               #    0,003 M/sec                  
+     5.446.197.733      cycles                    #    2,179 GHz                      (50,04%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,13%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,16%)
+     7.596.682.793      instructions              #    1,39  insns per cycle          (50,07%)
+       552.838.218      branches                  #  221,223 M/sec                    (49,90%)
+         1.430.070      branch-misses             #    0,26% of all branches          (50,03%)
+
+       2,504441055 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 2048: 
+Timer - Multiplication: 20891 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nested 2048':
+
+      20959,814947      task-clock (msec)         #    0,998 CPUs utilized          
+             1.798      context-switches          #    0,086 K/sec                  
+                 4      cpu-migrations            #    0,000 K/sec                  
+            24.737      page-faults               #    0,001 M/sec                  
+    45.487.912.313      cycles                    #    2,170 GHz                      (49,97%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,00%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,03%)
+    60.509.025.495      instructions              #    1,33  insns per cycle          (50,04%)
+     4.371.363.580      branches                  #  208,559 M/sec                    (50,02%)
+         6.943.883      branch-misses             #    0,16% of all branches          (49,99%)
+
+      21,005282387 seconds time elapsed
+
+PROBLEM SIZE 64: 
+Timer - Multiplication: 0 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nested 64':
+
+          3,963290      task-clock (msec)         #    0,861 CPUs utilized          
+                 0      context-switches          #    0,000 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               126      page-faults               #    0,032 M/sec                  
+           638.538      cycles                    #    0,161 GHz                    
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle   
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle   
+         4.812.081      instructions              #    7,54  insns per cycle          (85,76%)
+     <not counted>      branches                   (0,00%)
+     <not counted>      branch-misses              (0,00%)
+
+       0,004603928 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 128: 
+Timer - Multiplication: 7 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nested 128':
+
+         10,944711      task-clock (msec)         #    0,955 CPUs utilized          
+                 0      context-switches          #    0,000 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+               199      page-faults               #    0,018 M/sec                  
+         3.338.654      cycles                    #    0,305 GHz                    
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle   
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle   
+        22.812.749      instructions              #    6,83  insns per cycle          (69,31%)
+         1.734.667      branches                  #  158,494 M/sec                    (32,84%)
+     <not counted>      branch-misses              (0,00%)
+
+       0,011464458 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 512: 
+Timer - Multiplication: 282 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nested 512':
+
+        291,662166      task-clock (msec)         #    0,994 CPUs utilized          
+                25      context-switches          #    0,086 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+             1.652      page-faults               #    0,006 M/sec                  
+       628.780.609      cycles                    #    2,156 GHz                      (50,32%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,72%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,72%)
+       938.840.101      instructions              #    1,49  insns per cycle          (50,07%)
+        69.310.494      branches                  #  237,640 M/sec                    (51,07%)
+           303.311      branch-misses             #    0,44% of all branches          (50,36%)
+
+       0,293486908 seconds time elapsed
+
+==1641== Memcheck, a memory error detector
+==1641== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==1641== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==1641== Command: ./mmul_nested 512
+==1641== 
+Timer - Multiplication: 6574 ms 
+Ret: 0
+==1641== 
+==1641== HEAP SUMMARY:
+==1641==     in use at exit: 0 bytes in 0 blocks
+==1641==   total heap usage: 1,540 allocs, 1,540 frees, 6,328,359 bytes allocated
+==1641== 
+==1641== All heap blocks were freed -- no leaks are possible
+==1641== 
+==1641== For counts of detected and suppressed errors, rerun with: -v
+==1641== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=======================================
+PROBLEM SIZE 1024: 
+Timer - Multiplication: 3191 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nested 1024':
+
+       3222,171992      task-clock (msec)         #    0,998 CPUs utilized          
+               278      context-switches          #    0,086 K/sec                  
+                 0      cpu-migrations            #    0,000 K/sec                  
+             6.277      page-faults               #    0,002 M/sec                  
+     6.771.172.006      cycles                    #    2,101 GHz                      (50,06%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,12%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,16%)
+     7.579.553.630      instructions              #    1,12  insns per cycle          (50,04%)
+       552.803.774      branches                  #  171,562 M/sec                    (49,92%)
+         1.549.084      branch-misses             #    0,28% of all branches          (50,00%)
+
+       3,227759098 seconds time elapsed
+
+=======================================
+PROBLEM SIZE 2048: 
+Timer - Multiplication: 21001 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nested 2048':
+
+      21023,438981      task-clock (msec)         #    0,995 CPUs utilized          
+             2.156      context-switches          #    0,103 K/sec                  
+                 2      cpu-migrations            #    0,000 K/sec                  
+            24.737      page-faults               #    0,001 M/sec                  
+    45.515.939.200      cycles                    #    2,165 GHz                      (49,97%)
+                 0      stalled-cycles-frontend   #    0,00% frontend cycles idle     (50,03%)
+                 0      stalled-cycles-backend    #    0,00% backend  cycles idle     (50,06%)
+    60.439.676.965      instructions              #    1,33  insns per cycle          (50,05%)
+     4.378.660.043      branches                  #  208,275 M/sec                    (49,98%)
+         7.216.860      branch-misses             #    0,16% of all branches          (49,95%)
+
+      21,119656997 seconds time elapsed
+

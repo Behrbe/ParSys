@@ -1,0 +1,30 @@
+Timer - Multiplication: 56 ms 
+Ret: 0
+Timer - Multiplication: 2123 ms 
+Ret: 0
+Timer - Multiplication: 55 ms 
+Ret: 0
+Timer - Multiplication: 2095 ms 
+Ret: 0
+time ./mmul 64
+valgrind ./mmul 64
+time ./mmul 64
+valgrind ./mmul 64
+time ./mmul 64
+valgrind ./mmul 64
+Timer - Multiplication: 57 ms 
+Ret: 0
+Timer - Multiplication: 2048 ms 
+Ret: 0
+Timer - Multiplication: 55 ms 
+Ret: 0
+Timer - Multiplication: 59 ms 
+Ret: 0
+Timer - Multiplication: 2116 ms 
+Ret: 0
+Timer - Multiplication: 2073 ms 
+Ret: 0
+Timer - Multiplication: 56 ms 
+Ret: 0
+Timer - Multiplication: 2069 ms 
+Ret: 0

@@ -30,7 +30,7 @@ Matrix operator*(const Matrix& a, const Matrix& b) {
 		double u, v, w, x;
 		for(j=0; j<n; ++j) {
 			c[i][j]=0;
-			
+			#pragma omp parallel for
 			for( k=0 ; k<n-4; k=k+4) {
 				u= a[i][k+3] * b[k+3][j];
 				v= a[i][k+2] * b[k+2][j];

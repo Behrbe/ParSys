@@ -1,0 +1,43 @@
+#!/bin/bash
+echo "BENCHMARKING OF "$1>>$2
+echo "PROBLEM SIZE 64: ">>$2
+
+function benchmark{
+
+	local 64_1= /usr/bin/time ./$1 64 
+	local 64_2
+	local 64_3
+	local 128_1
+	local 128_2
+	local 128_3
+	local 512_1
+	local 512_2
+	local 512_3
+	local 1024_1
+	local 1024_2
+	local 1024_3
+ 	local 2048_1
+	local 2048_2
+	local 2048_3
+	/usr/bin/time --output=$64_1 ./$1 64 >>$2;
+	/usr/bin/time --output=$2 --append  ./$1 128 >>$2;
+	/usr/bin/time --output=$2 --append  ./$1 512 >>$2;
+	/usr/bin/time --output=$2 --append  ./$1 1024 >>$2;
+	/usr/bin/time --output=$2 --append  ./$1 2048 >>$2;
+echo "=======================================">>$2
+echo "PROBLEM SIZE 128: ">>$2
+
+
+echo "=======================================">>$2
+echo "PROBLEM SIZE 512: ">>$2
+
+
+
+echo "=======================================">>$2
+echo "PROBLEM SIZE 1024: ">>$2
+
+
+echo "=======================================">>$2
+echo "PROBLEM SIZE 2048: ">>$2
+
+
